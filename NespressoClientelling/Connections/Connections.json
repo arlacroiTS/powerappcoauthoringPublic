@@ -1,0 +1,79 @@
+{
+  "2a686619-5ba5-42a6-9f55-347c639ceecd": {
+    "connectionParameters": {},
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SAP-ODATA-Demo",
+      "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_demo-5fsap-2dodata-2ddemo-5fb42977e800e4e49a",
+      "isCustomApiConnection": true,
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "SAPODATA[Sample]Connector"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2a686619-5ba5-42a6-9f55-347c639ceecd"
+  },
+  "699d0646-6738-45c3-b64c-6f4b7779c7d8": {
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "token:grantType": "code"
+    },
+    "connectionRef": {
+      "apiTier": "Premium",
+      "bypassConsent": true,
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "a6619bd9-7326-4d5d-86c0-cb959902613d"
+    ],
+    "id": "699d0646-6738-45c3-b64c-6f4b7779c7d8"
+  },
+  "a6619bd9-7326-4d5d-86c0-cb959902613d": {
+    "connectionParameters": {},
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "699d0646-6738-45c3-b64c-6f4b7779c7d8": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b8886304-7df9-44f1-ba58-900f39cf482d"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "699d0646-6738-45c3-b64c-6f4b7779c7d8"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b8886304-7df9-44f1-ba58-900f39cf482d"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerApp->Addanewrow"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "699d0646-6738-45c3-b64c-6f4b7779c7d8"
+    },
+    "dependents": [],
+    "id": "a6619bd9-7326-4d5d-86c0-cb959902613d"
+  }
+}

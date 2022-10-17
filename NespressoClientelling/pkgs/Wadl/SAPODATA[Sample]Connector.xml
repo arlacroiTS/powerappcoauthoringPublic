@@ -1,0 +1,628 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/sap-2dodata-2ddemo-5fe381b679790aa2ae-5f574a6b5d0b64d78d" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="SAPODATA[Sample]Connector" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="SAP ODATA [Sample] Connector">SAP ODATA Demo using a custom connector.  This connects to the sample ODATA service provided by SAP. This connector is provided as a sample as-is, for illustrative purpose only.</doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/sap-2dodata-2ddemo-5fe381b679790aa2ae-5f574a6b5d0b64d78d" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="__metadata_id_def" />
+      <string name="__metadata_uri_def" />
+      <string name="__metadata_type_def" />
+      <string name="__metadata_etag_def" />
+      <object name="__metadata">
+        <property name="id" type="string" />
+        <property name="uri" type="string" />
+        <property name="type" type="string" />
+        <property name="etag" type="string" />
+      </object>
+      <string name="ProductForCreate_ProductID_def" />
+      <string name="ProductForCreate_Name_def" />
+      <string name="ProductForCreate_Description_def" />
+      <integer name="ProductForCreate_TaxTarifCode_def" />
+      <string name="ProductForCreate_WeightMeasure_def" />
+      <string name="ProductForCreate_Price_def" />
+      <string name="ProductForCreate_Width_def" />
+      <string name="ProductForCreate_Depth_def" />
+      <string name="ProductForCreate_Height_def" />
+      <object name="ProductForCreate">
+        <property name="ProductID" type="string" />
+        <property name="TypeCode" type="string" />
+        <property name="Category" type="string" />
+        <property name="Name" type="string" />
+        <property name="Description" type="string" />
+        <property name="SupplierID" type="string" />
+        <property name="TaxTarifCode" type="integer" />
+        <property name="MeasureUnit" type="string" />
+        <property name="WeightMeasure" type="string" />
+        <property name="WeightUnit" type="string" />
+        <property name="CurrencyCode" type="string" />
+        <property name="Price" type="string" />
+        <property name="Width" type="string" />
+        <property name="Depth" type="string" />
+        <property name="Height" type="string" />
+        <property name="DimUnit" type="string" />
+      </object>
+      <string name="Product_ProductID_def" />
+      <string name="Product_Name_def" />
+      <string name="Product_NameLanguage_def" />
+      <string name="Product_Description_def" />
+      <string name="Product_DescriptionLanguage_def" />
+      <string name="Product_SupplierName_def" />
+      <integer name="Product_TaxTarifCode_def" />
+      <string name="Product_WeightMeasure_def" />
+      <string name="Product_Price_def" />
+      <string name="Product_Width_def" />
+      <string name="Product_Depth_def" />
+      <string name="Product_Height_def" />
+      <string name="Product_CreatedAt_def" />
+      <string name="Product_ChangedAt_def" />
+      <object name="Product">
+        <property name="__metadata" typeRef="__metadata" />
+        <property name="ProductID" type="string" />
+        <property name="TypeCode" type="string" />
+        <property name="Category" type="string" />
+        <property name="Name" type="string" />
+        <property name="NameLanguage" type="string" />
+        <property name="Description" type="string" />
+        <property name="DescriptionLanguage" type="string" />
+        <property name="SupplierID" type="string" />
+        <property name="SupplierName" type="string" />
+        <property name="TaxTarifCode" type="integer" />
+        <property name="MeasureUnit" type="string" />
+        <property name="WeightMeasure" type="string" />
+        <property name="WeightUnit" type="string" />
+        <property name="CurrencyCode" type="string" />
+        <property name="Price" type="string" />
+        <property name="Width" type="string" />
+        <property name="Depth" type="string" />
+        <property name="Height" type="string" />
+        <property name="DimUnit" type="string" />
+        <property name="CreatedAt" type="string" />
+        <property name="ChangedAt" type="string" />
+      </object>
+      <string name="SalesOrder_SalesOrderID_def" />
+      <string name="SalesOrder_Note_def" />
+      <string name="SalesOrder_NoteLanguage_def" />
+      <string name="SalesOrder_CustomerID_def" />
+      <string name="SalesOrder_CustomerName_def" />
+      <string name="SalesOrder_CurrencyCode_def" />
+      <string name="SalesOrder_GrossAmount_def" />
+      <string name="SalesOrder_NetAmount_def" />
+      <string name="SalesOrder_TaxAmount_def" />
+      <string name="SalesOrder_LifecycleStatus_def" />
+      <string name="SalesOrder_LifecycleStatusDescription_def" />
+      <string name="SalesOrder_BillingStatus_def" />
+      <string name="SalesOrder_BillingStatusDescription_def" />
+      <string name="SalesOrder_DeliveryStatus_def" />
+      <string name="SalesOrder_DeliveryStatusDescription_def" />
+      <string name="SalesOrder_CreatedAt_def" />
+      <string name="SalesOrder_ChangedAt_def" />
+      <object name="SalesOrder">
+        <property name="__metadata" typeRef="__metadata" />
+        <property name="SalesOrderID" type="string" />
+        <property name="Note" type="string" />
+        <property name="NoteLanguage" type="string" />
+        <property name="CustomerID" type="string" />
+        <property name="CustomerName" type="string" />
+        <property name="CurrencyCode" type="string" />
+        <property name="GrossAmount" type="string" />
+        <property name="NetAmount" type="string" />
+        <property name="TaxAmount" type="string" />
+        <property name="LifecycleStatus" type="string" />
+        <property name="LifecycleStatusDescription" type="string" />
+        <property name="BillingStatus" type="string" />
+        <property name="BillingStatusDescription" type="string" />
+        <property name="DeliveryStatus" type="string" />
+        <property name="DeliveryStatusDescription" type="string" />
+        <property name="CreatedAt" type="string" />
+        <property name="ChangedAt" type="string" />
+      </object>
+      <string name="BusinessPartner_Address_def___metadata_def_type_def" />
+      <object name="BusinessPartner_Address_def___metadata_def">
+        <property name="type" type="string" />
+      </object>
+      <string name="BusinessPartner_Address_def_City_def" />
+      <string name="BusinessPartner_Address_def_PostalCode_def" />
+      <string name="BusinessPartner_Address_def_Street_def" />
+      <string name="BusinessPartner_Address_def_Building_def" />
+      <string name="BusinessPartner_Address_def_Country_def" />
+      <string name="BusinessPartner_Address_def_AddressType_def" />
+      <object name="BusinessPartner_Address_def">
+        <property name="__metadata" typeRef="BusinessPartner_Address_def___metadata_def" />
+        <property name="City" type="string" />
+        <property name="PostalCode" type="string" />
+        <property name="Street" type="string" />
+        <property name="Building" type="string" />
+        <property name="Country" type="string" />
+        <property name="AddressType" type="string" />
+      </object>
+      <string name="BusinessPartner_BusinessPartnerID_def" />
+      <string name="BusinessPartner_CompanyName_def" />
+      <string name="BusinessPartner_WebAddress_def" />
+      <string name="BusinessPartner_EmailAddress_def" />
+      <string name="BusinessPartner_PhoneNumber_def" />
+      <string name="BusinessPartner_FaxNumber_def" />
+      <string name="BusinessPartner_LegalForm_def" />
+      <string name="BusinessPartner_CurrencyCode_def" />
+      <string name="BusinessPartner_BusinessPartnerRole_def" />
+      <string name="BusinessPartner_CreatedAt_def" />
+      <string name="BusinessPartner_ChangedAt_def" />
+      <object name="BusinessPartner">
+        <property name="__metadata" typeRef="__metadata" />
+        <property name="Address" typeRef="BusinessPartner_Address_def" />
+        <property name="BusinessPartnerID" type="string" />
+        <property name="CompanyName" type="string" />
+        <property name="WebAddress" type="string" />
+        <property name="EmailAddress" type="string" />
+        <property name="PhoneNumber" type="string" />
+        <property name="FaxNumber" type="string" />
+        <property name="LegalForm" type="string" />
+        <property name="CurrencyCode" type="string" />
+        <property name="BusinessPartnerRole" type="string" />
+        <property name="CreatedAt" type="string" />
+        <property name="ChangedAt" type="string" />
+      </object>
+      <string name="TypeCode" />
+      <string name="Category" />
+      <string name="SupplierID" />
+      <string name="MeasureUnit" />
+      <string name="WeightUnit" />
+      <string name="CurrencyCode" />
+      <string name="DimUnit" />
+      <array typeRef="Product" name="ListProductSets_responses_default_def_d_def_results_def" />
+      <object name="ListProductSets_responses_default_def_d_def">
+        <property name="results" typeRef="ListProductSets_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListProductSets_responses_default_def">
+        <property name="d" typeRef="ListProductSets_responses_default_def_d_def" />
+      </object>
+      <object name="GetProduct_responses_default_def">
+        <property name="d" typeRef="Product" />
+      </object>
+      <array typeRef="SalesOrder" name="ListSalesOrders_responses_default_def_d_def_results_def" />
+      <object name="ListSalesOrders_responses_default_def_d_def">
+        <property name="results" typeRef="ListSalesOrders_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListSalesOrders_responses_default_def">
+        <property name="d" typeRef="ListSalesOrders_responses_default_def_d_def" />
+      </object>
+      <object name="GetSalesOrder_responses_default_def">
+        <property name="d" typeRef="SalesOrder" />
+      </object>
+      <array typeRef="BusinessPartner" name="ListBusinessPartner_responses_default_def_d_def_results_def" />
+      <object name="ListBusinessPartner_responses_default_def_d_def">
+        <property name="results" typeRef="ListBusinessPartner_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListBusinessPartner_responses_default_def">
+        <property name="d" typeRef="ListBusinessPartner_responses_default_def_d_def" />
+      </object>
+      <object name="GetBusinessPartner_responses_default_def">
+        <property name="d" typeRef="BusinessPartner" />
+      </object>
+      <string name="ListProductTypeCode_responses_default_def_d_def_results_def_items_def___metadata_def_id_def" />
+      <string name="ListProductTypeCode_responses_default_def_d_def_results_def_items_def___metadata_def_uri_def" />
+      <string name="ListProductTypeCode_responses_default_def_d_def_results_def_items_def___metadata_def_type_def" />
+      <object name="ListProductTypeCode_responses_default_def_d_def_results_def_items_def___metadata_def">
+        <property name="id" type="string" />
+        <property name="uri" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <string name="ListProductTypeCode_responses_default_def_d_def_results_def_items_def_TypeCode_def" />
+      <string name="ListProductTypeCode_responses_default_def_d_def_results_def_items_def_Shorttext_def" />
+      <object name="ListProductTypeCode_responses_default_def_d_def_results_def_items_def">
+        <property name="__metadata" typeRef="ListProductTypeCode_responses_default_def_d_def_results_def_items_def___metadata_def" />
+        <property name="TypeCode" type="string" />
+        <property name="Shorttext" type="string" />
+      </object>
+      <array typeRef="ListProductTypeCode_responses_default_def_d_def_results_def_items_def" name="ListProductTypeCode_responses_default_def_d_def_results_def" />
+      <object name="ListProductTypeCode_responses_default_def_d_def">
+        <property name="results" typeRef="ListProductTypeCode_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListProductTypeCode_responses_default_def">
+        <property name="d" typeRef="ListProductTypeCode_responses_default_def_d_def" />
+      </object>
+      <string name="ListProductCategory_responses_default_def_d_def_results_def_items_def___metadata_def_id_def" />
+      <string name="ListProductCategory_responses_default_def_d_def_results_def_items_def___metadata_def_uri_def" />
+      <string name="ListProductCategory_responses_default_def_d_def_results_def_items_def___metadata_def_type_def" />
+      <object name="ListProductCategory_responses_default_def_d_def_results_def_items_def___metadata_def">
+        <property name="id" type="string" />
+        <property name="uri" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <string name="ListProductCategory_responses_default_def_d_def_results_def_items_def_Category_def" />
+      <object name="ListProductCategory_responses_default_def_d_def_results_def_items_def">
+        <property name="__metadata" typeRef="ListProductCategory_responses_default_def_d_def_results_def_items_def___metadata_def" />
+        <property name="Category" type="string" />
+      </object>
+      <array typeRef="ListProductCategory_responses_default_def_d_def_results_def_items_def" name="ListProductCategory_responses_default_def_d_def_results_def" />
+      <object name="ListProductCategory_responses_default_def_d_def">
+        <property name="results" typeRef="ListProductCategory_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListProductCategory_responses_default_def">
+        <property name="d" typeRef="ListProductCategory_responses_default_def_d_def" />
+      </object>
+      <string name="ListCurrencyCode_responses_default_def_d_def_results_def_items_def___metadata_def_id_def" />
+      <string name="ListCurrencyCode_responses_default_def_d_def_results_def_items_def___metadata_def_uri_def" />
+      <string name="ListCurrencyCode_responses_default_def_d_def_results_def_items_def___metadata_def_type_def" />
+      <object name="ListCurrencyCode_responses_default_def_d_def_results_def_items_def___metadata_def">
+        <property name="id" type="string" />
+        <property name="uri" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <string name="ListCurrencyCode_responses_default_def_d_def_results_def_items_def_Waers_def" />
+      <string name="ListCurrencyCode_responses_default_def_d_def_results_def_items_def_Ltext_def" />
+      <object name="ListCurrencyCode_responses_default_def_d_def_results_def_items_def">
+        <property name="__metadata" typeRef="ListCurrencyCode_responses_default_def_d_def_results_def_items_def___metadata_def" />
+        <property name="Waers" type="string" />
+        <property name="Ltext" type="string" />
+      </object>
+      <array typeRef="ListCurrencyCode_responses_default_def_d_def_results_def_items_def" name="ListCurrencyCode_responses_default_def_d_def_results_def" />
+      <object name="ListCurrencyCode_responses_default_def_d_def">
+        <property name="results" typeRef="ListCurrencyCode_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListCurrencyCode_responses_default_def">
+        <property name="d" typeRef="ListCurrencyCode_responses_default_def_d_def" />
+      </object>
+      <string name="ListMeasureUnit_responses_default_def_d_def_results_def_items_def___metadata_def_id_def" />
+      <string name="ListMeasureUnit_responses_default_def_d_def_results_def_items_def___metadata_def_uri_def" />
+      <string name="ListMeasureUnit_responses_default_def_d_def_results_def_items_def___metadata_def_type_def" />
+      <object name="ListMeasureUnit_responses_default_def_d_def_results_def_items_def___metadata_def">
+        <property name="id" type="string" />
+        <property name="uri" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <string name="ListMeasureUnit_responses_default_def_d_def_results_def_items_def_Msehi_def" />
+      <string name="ListMeasureUnit_responses_default_def_d_def_results_def_items_def_Msehl_def" />
+      <object name="ListMeasureUnit_responses_default_def_d_def_results_def_items_def">
+        <property name="__metadata" typeRef="ListMeasureUnit_responses_default_def_d_def_results_def_items_def___metadata_def" />
+        <property name="Msehi" type="string" />
+        <property name="Msehl" type="string" />
+      </object>
+      <array typeRef="ListMeasureUnit_responses_default_def_d_def_results_def_items_def" name="ListMeasureUnit_responses_default_def_d_def_results_def" />
+      <object name="ListMeasureUnit_responses_default_def_d_def">
+        <property name="results" typeRef="ListMeasureUnit_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListMeasureUnit_responses_default_def">
+        <property name="d" typeRef="ListMeasureUnit_responses_default_def_d_def" />
+      </object>
+      <string name="ListWeightUnit_responses_default_def_d_def_results_def_items_def___metadata_def_id_def" />
+      <string name="ListWeightUnit_responses_default_def_d_def_results_def_items_def___metadata_def_uri_def" />
+      <string name="ListWeightUnit_responses_default_def_d_def_results_def_items_def___metadata_def_type_def" />
+      <object name="ListWeightUnit_responses_default_def_d_def_results_def_items_def___metadata_def">
+        <property name="id" type="string" />
+        <property name="uri" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <string name="ListWeightUnit_responses_default_def_d_def_results_def_items_def_Msehi_def" />
+      <string name="ListWeightUnit_responses_default_def_d_def_results_def_items_def_Msehl_def" />
+      <object name="ListWeightUnit_responses_default_def_d_def_results_def_items_def">
+        <property name="__metadata" typeRef="ListWeightUnit_responses_default_def_d_def_results_def_items_def___metadata_def" />
+        <property name="Msehi" type="string" />
+        <property name="Msehl" type="string" />
+      </object>
+      <array typeRef="ListWeightUnit_responses_default_def_d_def_results_def_items_def" name="ListWeightUnit_responses_default_def_d_def_results_def" />
+      <object name="ListWeightUnit_responses_default_def_d_def">
+        <property name="results" typeRef="ListWeightUnit_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListWeightUnit_responses_default_def">
+        <property name="d" typeRef="ListWeightUnit_responses_default_def_d_def" />
+      </object>
+      <string name="ListLengthUnit_responses_default_def_d_def_results_def_items_def___metadata_def_id_def" />
+      <string name="ListLengthUnit_responses_default_def_d_def_results_def_items_def___metadata_def_uri_def" />
+      <string name="ListLengthUnit_responses_default_def_d_def_results_def_items_def___metadata_def_type_def" />
+      <object name="ListLengthUnit_responses_default_def_d_def_results_def_items_def___metadata_def">
+        <property name="id" type="string" />
+        <property name="uri" type="string" />
+        <property name="type" type="string" />
+      </object>
+      <string name="ListLengthUnit_responses_default_def_d_def_results_def_items_def_Msehi_def" />
+      <string name="ListLengthUnit_responses_default_def_d_def_results_def_items_def_Msehl_def" />
+      <object name="ListLengthUnit_responses_default_def_d_def_results_def_items_def">
+        <property name="__metadata" typeRef="ListLengthUnit_responses_default_def_d_def_results_def_items_def___metadata_def" />
+        <property name="Msehi" type="string" />
+        <property name="Msehl" type="string" />
+      </object>
+      <array typeRef="ListLengthUnit_responses_default_def_d_def_results_def_items_def" name="ListLengthUnit_responses_default_def_d_def_results_def" />
+      <object name="ListLengthUnit_responses_default_def_d_def">
+        <property name="results" typeRef="ListLengthUnit_responses_default_def_d_def_results_def" />
+      </object>
+      <object name="ListLengthUnit_responses_default_def">
+        <property name="d" typeRef="ListLengthUnit_responses_default_def_d_def" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/sap-2dodata-2ddemo-5fe381b679790aa2ae-5f574a6b5d0b64d78d">
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListProductSets" siena:isDeprecated="false">
+        <doc title="List product sets&#xA;Fetch the list of products" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+          <param style="query" name="$filter" type="xs:string" />
+          <param style="query" name="$top" type="xs:double" />
+          <param style="query" name="$skip" type="xs:double" />
+          <param style="query" name="$select" type="xs:string" />
+          <param style="header" name="x-csrf-token" type="xs:string">
+            <option value="fetch" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListProductSets_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="AddProduct" siena:isDeprecated="false">
+        <doc title="Add product&#xA;Add a product" />
+        <request>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed="application/json" />
+          <param style="header" name="x-csrf-token" type="xs:string" required="true" />
+          <param style="header" name="x-ms-cookie-header" type="xs:string" required="true" />
+          <representation mediaType="application/json">
+            <param style="plain" name="ProductID" path="/ProductID" type="xs:string" required="true">
+              <doc title="Product ID" />
+            </param>
+            <param style="plain" name="TypeCode" path="/TypeCode" type="xs:string" required="true">
+              <doc title="Type Code" />
+            </param>
+            <param style="plain" name="Category" path="/Category" type="xs:string" required="true" />
+            <param style="plain" name="Name" path="/Name" type="xs:string" required="true" />
+            <param style="plain" name="Description" path="/Description" type="xs:string" />
+            <param style="plain" name="SupplierID" path="/SupplierID" type="xs:string" required="true">
+              <doc title="Supplier ID" />
+            </param>
+            <param style="plain" name="TaxTarifCode" path="/TaxTarifCode" type="xs:int" required="true">
+              <doc title="Product Tax Code" />
+            </param>
+            <param style="plain" name="MeasureUnit" path="/MeasureUnit" type="xs:string">
+              <doc title="Unit of Measure" />
+            </param>
+            <param style="plain" name="WeightMeasure" path="/WeightMeasure" type="xs:string" />
+            <param style="plain" name="WeightUnit" path="/WeightUnit" type="xs:string">
+              <doc title="Weight unit" />
+            </param>
+            <param style="plain" name="CurrencyCode" path="/CurrencyCode" type="xs:string" required="true">
+              <doc title="Currency Code" />
+            </param>
+            <param style="plain" name="Price" path="/Price" type="xs:string" required="true" />
+            <param style="plain" name="Width" path="/Width" type="xs:string" />
+            <param style="plain" name="Depth" path="/Depth" type="xs:string" />
+            <param style="plain" name="Height" path="/Height" type="xs:string" />
+            <param style="plain" name="DimUnit" path="/DimUnit" type="xs:string">
+              <doc title="Dimension unit" />
+            </param>
+          </representation>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet('{id}')">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetProduct" siena:isDeprecated="false">
+        <doc title="Get product&#xA;Retrieve a product" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+          <param style="header" name="x-csrf-token" type="xs:string">
+            <option value="fetch" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:GetProduct_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/ProductSet('{id}')">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="PATCH" id="UpdateProduct" siena:isDeprecated="false">
+        <doc title="Update product&#xA;Update a product" />
+        <request>
+          <param style="header" name="Content-Type" type="xs:string" required="true" fixed="application/json" />
+          <param style="header" name="x-csrf-token" type="xs:string" required="true" />
+          <param style="header" name="x-ms-cookie-header" type="xs:string" required="true" />
+          <param style="header" name="If-Match" type="xs:string" required="true" />
+          <representation mediaType="application/json">
+            <param style="plain" name="__metadata" path="/__metadata" type="service:__metadata" />
+            <param style="plain" name="ProductID" path="/ProductID" type="xs:string">
+              <doc title="Product ID" />
+            </param>
+            <param style="plain" name="TypeCode" path="/TypeCode" type="xs:string">
+              <doc title="Type Code" />
+            </param>
+            <param style="plain" name="Category" path="/Category" type="xs:string" />
+            <param style="plain" name="Name" path="/Name" type="xs:string" />
+            <param style="plain" name="NameLanguage" path="/NameLanguage" type="xs:string">
+              <doc title="Name Language" />
+            </param>
+            <param style="plain" name="Description" path="/Description" type="xs:string" />
+            <param style="plain" name="DescriptionLanguage" path="/DescriptionLanguage" type="xs:string">
+              <doc title="Description Language" />
+            </param>
+            <param style="plain" name="SupplierID" path="/SupplierID" type="xs:string">
+              <doc title="Supplier ID" />
+            </param>
+            <param style="plain" name="SupplierName" path="/SupplierName" type="xs:string">
+              <doc title="Supplier Name" />
+            </param>
+            <param style="plain" name="TaxTarifCode" path="/TaxTarifCode" type="xs:int">
+              <doc title="Product Tax Code" />
+            </param>
+            <param style="plain" name="MeasureUnit" path="/MeasureUnit" type="xs:string">
+              <doc title="Unit of Measure" />
+            </param>
+            <param style="plain" name="WeightMeasure" path="/WeightMeasure" type="xs:string">
+              <doc title="Weight Measure" />
+            </param>
+            <param style="plain" name="WeightUnit" path="/WeightUnit" type="xs:string">
+              <doc title="Weight unit" />
+            </param>
+            <param style="plain" name="CurrencyCode" path="/CurrencyCode" type="xs:string">
+              <doc title="Currency Code" />
+            </param>
+            <param style="plain" name="Price" path="/Price" type="xs:string" />
+            <param style="plain" name="Width" path="/Width" type="xs:string" />
+            <param style="plain" name="Depth" path="/Depth" type="xs:string" />
+            <param style="plain" name="Height" path="/Height" type="xs:string" />
+            <param style="plain" name="DimUnit" path="/DimUnit" type="xs:string">
+              <doc title="Dimension unit" />
+            </param>
+            <param style="plain" name="CreatedAt" path="/CreatedAt" type="xs:string">
+              <doc title="Created At" />
+            </param>
+            <param style="plain" name="ChangedAt" path="/ChangedAt" type="xs:string">
+              <doc title="Changed At" />
+            </param>
+          </representation>
+        </request>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/SalesOrderSet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListSalesOrders" siena:isDeprecated="false">
+        <doc title="List Sales Orders&#xA;Fetch the list of Sales Orders" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+          <param style="query" name="$filter" type="xs:string" />
+          <param style="query" name="$top" type="xs:double" />
+          <param style="query" name="$skip" type="xs:double" />
+          <param style="query" name="$select" type="xs:string" />
+          <param style="header" name="x-csrf-token" type="xs:string">
+            <option value="fetch" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListSalesOrders_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/SalesOrderSet('{id}')">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetSalesOrder" siena:isDeprecated="false">
+        <doc title="Get sales order&#xA;Retrieve a Sales Order" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+          <param style="header" name="x-csrf-token" type="xs:string">
+            <option value="fetch" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:GetSalesOrder_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/BusinessPartnerSet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListBusinessPartner" siena:isDeprecated="false">
+        <doc title="List Business Partners&#xA;Fetch the list of Business Partners" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+          <param style="query" name="$filter" type="xs:string" />
+          <param style="query" name="$top" type="xs:double" />
+          <param style="query" name="$skip" type="xs:double" />
+          <param style="query" name="$select" type="xs:string" />
+          <param style="header" name="x-csrf-token" type="xs:string">
+            <option value="fetch" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListBusinessPartner_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/BusinessPartnerSet('{id}')">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <param style="template" name="id" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="GetBusinessPartner" siena:isDeprecated="false">
+        <doc title="Get partner&#xA;Retrieve a business partner" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+          <param style="header" name="x-csrf-token" type="xs:string">
+            <option value="fetch" />
+          </param>
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:GetBusinessPartner_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/VH_ProductTypeCodeSet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListProductTypeCode" siena:isDeprecated="false">
+        <doc title="List product type codes&#xA;Retrieves the list of valid type codes" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListProductTypeCode_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/VH_CategorySet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListProductCategory" siena:isDeprecated="false">
+        <doc title="List product categories&#xA;Retrieve a list of product categories" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListProductCategory_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/VH_CurrencySet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListCurrencyCode" siena:isDeprecated="false">
+        <doc title="List currency codes&#xA;Retrieves a list of currency code" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListCurrencyCode_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/VH_UnitQuantitySet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListMeasureUnit" siena:isDeprecated="false">
+        <doc title="List measure unit&#xA;Retrieve a list of measure units" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListMeasureUnit_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/VH_UnitWeightSet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListWeightUnit" siena:isDeprecated="false">
+        <doc title="List weight units&#xA;Retrieves a list of weight units" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListWeightUnit_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+    <resource path="/{connectionId}/sap/opu/odata/iwbep/GWSAMPLE_BASIC/VH_UnitLengthSet">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListLengthUnit" siena:isDeprecated="false">
+        <doc title="List length units&#xA;Retrieves a list of length units" />
+        <request>
+          <param style="query" name="$format" type="xs:string" required="true" fixed="json" />
+        </request>
+        <response>
+          <representation mediaType="application/json" element="service:ListLengthUnit_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_sap-2dodata-2ddemo-5fe381b679790aa2ae-5f574a6b5d0b64d78d" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

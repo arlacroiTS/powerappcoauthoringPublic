@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sap-2dodata-2ddemo-5fe381b679790aa2ae-5f574a6b5d0b64d78d",
+    "Name": "SAPODATA[Sample]Connector",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]
