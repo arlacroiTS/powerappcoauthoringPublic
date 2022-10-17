@@ -1,0 +1,97 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "demo_n_machineses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "demo_n_machines",
+    "Name": "N_MACHINES",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "demo_ContactMachine": "ContactMachine",
+      "demo_n_machines_AsyncOperations": "System Jobs",
+      "demo_n_machines_BulkDeleteFailures": "Bulk Delete Failures",
+      "demo_n_machines_DuplicateBaseRecord": "Duplicate Records (demo_n_machines_DuplicateBaseRecord)",
+      "demo_n_machines_DuplicateMatchingRecord": "Duplicate Records (demo_n_machines_DuplicateMatchingRecord)",
+      "demo_n_machines_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "demo_n_machines_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "demo_n_machines_ProcessSession": "Process Sessions",
+      "demo_n_machines_SyncErrors": "Sync Errors",
+      "demo_n_machinesid": "N_MACHINES",
+      "demo_name": "Name",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "N_MACHINES",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "N_MACHINES (Views)",
+    "Name": "_demo_n_machines_views",
+    "RelatedEntityName": "N_MACHINES",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "26ebb794-c736-4b62-b39f-6271cfb14ceb": "N_MACHINES Associated View",
+      "368e68be-d90c-4403-8fdd-bbde7b908767": "N_MACHINES Lookup View",
+      "e5bdc843-c7b8-43ab-a93d-0eeeeefad1f0": "Inactive N_MACHINES",
+      "e6bd9234-0225-43cc-9212-cc81cb7ec65a": "N_MACHINES Advanced Find View",
+      "f425175a-f4f9-40ab-b2df-446fc9d04790": "Active N_MACHINES"
+    }
+  },
+  {
+    "DisplayName": "Status (N_MACHINES)",
+    "Name": "demo_n_machines_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "N_MACHINES"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "N_MACHINES",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (N_MACHINES)",
+    "Name": "demo_n_machines_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "N_MACHINES"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "N_MACHINES",
+    "Type": "OptionSetInfo"
+  }
+]

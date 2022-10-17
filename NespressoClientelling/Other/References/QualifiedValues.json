@@ -87,6 +87,41 @@
       "Values": {
         "Information": "df5bef3a-9237-40bd-a27c-2cd7fd434706"
       }
+    },
+    {
+      "Kind": "default.cds_demo_n_machines_forms",
+      "Namespace": "N_MACHINES (Forms)",
+      "Values": {
+        "Information": "6fb8f33d-d93c-4451-be12-efb4da3b147e"
+      }
+    },
+    {
+      "Kind": "default.cds_demo_n_orders_forms",
+      "Namespace": "N_ORDERS (Forms)",
+      "Values": {
+        "Information": "ca4a2352-1c1f-4a4a-9b2d-f2f93ece0454"
+      }
+    },
+    {
+      "Kind": "default.cds_demo_n_favoritecoffee_forms",
+      "Namespace": "N_FAVORITE COFFEES (Forms)",
+      "Values": {
+        "Information": "262d1da7-7aa0-4192-8fc9-d9da951be727"
+      }
+    },
+    {
+      "Kind": "default.cds_demo_n_recommendation_forms",
+      "Namespace": "N_RECOMMENDATIONS (Forms)",
+      "Values": {
+        "Information": "bfc0eb57-c231-4f1f-8faa-db7b7f1d064c"
+      }
+    },
+    {
+      "Kind": "default.cds_demo_n_segments_forms",
+      "Namespace": "N_SEGMENTS (Forms)",
+      "Values": {
+        "Information": "7f7e5131-5cb0-485d-b5a8-f94eaeb2ba12"
+      }
     }
   ]
 }

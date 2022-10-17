@@ -1,0 +1,97 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "demo_n_orderses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "demo_n_orders",
+    "Name": "N_ORDERS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "demo_ContactOrders": "ContactOrders",
+      "demo_n_orders_AsyncOperations": "System Jobs",
+      "demo_n_orders_BulkDeleteFailures": "Bulk Delete Failures",
+      "demo_n_orders_DuplicateBaseRecord": "Duplicate Records (demo_n_orders_DuplicateBaseRecord)",
+      "demo_n_orders_DuplicateMatchingRecord": "Duplicate Records (demo_n_orders_DuplicateMatchingRecord)",
+      "demo_n_orders_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "demo_n_orders_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "demo_n_orders_ProcessSession": "Process Sessions",
+      "demo_n_orders_SyncErrors": "Sync Errors",
+      "demo_n_ordersid": "N_ORDERS",
+      "demo_name": "Name",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "N_ORDERS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "N_ORDERS (Views)",
+    "Name": "_demo_n_orders_views",
+    "RelatedEntityName": "N_ORDERS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "13ab0b9f-8aae-468a-b091-b258e9b350c6": "N_ORDERS Advanced Find View",
+      "60ca9241-9cbe-4a3d-b56d-785450046b0e": "N_ORDERS Associated View",
+      "ce1e6b58-c990-41d9-ad50-6d787460fc13": "N_ORDERS Lookup View",
+      "f24217bb-051e-4b88-a8cf-4d127d0c5ee1": "Active N_ORDERS",
+      "fe754e87-d88b-4355-a18a-6760562a3bfd": "Inactive N_ORDERS"
+    }
+  },
+  {
+    "DisplayName": "Status (N_ORDERS)",
+    "Name": "demo_n_orders_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "N_ORDERS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "N_ORDERS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (N_ORDERS)",
+    "Name": "demo_n_orders_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "N_ORDERS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "N_ORDERS",
+    "Type": "OptionSetInfo"
+  }
+]
