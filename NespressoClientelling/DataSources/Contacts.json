@@ -233,6 +233,7 @@
       "demo_Contact_ContactFavoriteCoffee_demo_N_FAVO": "N_FAVORITE COFFEES",
       "demo_Contact_ContactMachine_demo_N_MACHINES": "N_MACHINES",
       "demo_Contact_ContactOrders_demo_N_ORDERS": "N_ORDERS",
+      "demo_n_loyalty": "N_Loyalty",
       "demo_N_SEGMENTSContacts": "N_SEGMENTSContacts",
       "department": "Department",
       "description": "Description",
@@ -1763,6 +1764,27 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "territorycode",
+    "RelatedEntityName": "Contacts",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "N_LOYALTY_CHOICE",
+    "Name": "demo_n_loyalty_choice",
+    "OptionSetInfoNameMapping": {
+      "1": "Connoisseur",
+      "2": "Expert",
+      "3": "Ambassador"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "demo_n_loyalty",
+        "OptionSetReferenceEntityName": "Contacts"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "demo_n_loyalty",
     "RelatedEntityName": "Contacts",
     "Type": "OptionSetInfo"
   },

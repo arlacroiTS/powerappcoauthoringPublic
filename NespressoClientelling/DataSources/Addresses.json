@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "customeraddress",
+    "MaxGetRowsCount": 500,
     "Name": "Addresses",
     "NativeCDSDataSourceInfoNameMapping": {
       "_parentid_value": "Parent",

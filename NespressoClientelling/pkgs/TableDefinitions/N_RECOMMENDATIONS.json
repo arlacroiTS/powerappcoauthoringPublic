@@ -2,10 +2,6 @@
   "DatasetName": "default.cds",
   "EntityName": "N_RECOMMENDATIONS",
   "InstanceUrl": "https://org4f64dcaa.crm4.dynamics.com/",
-  "LocalReferenceDSJson": {
-    "entitySetName": "demo_n_recommendations",
-    "logicalName": "demo_n_recommendation"
-  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org4f64dcaa.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('demo_n_recommendation')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",

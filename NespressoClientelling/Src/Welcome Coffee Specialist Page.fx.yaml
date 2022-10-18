@@ -1,4 +1,5 @@
 "'Welcome Coffee Specialist Page' As screen":
+    BackgroundImage: =background
 
     Label1_1 As label:
         Fill: =RGBA(0, 0, 0, 1)
@@ -56,36 +57,43 @@
     TextInput1 As text:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =4
-        Default: ="Look for a customer"
+        Default: =""
+        Font: =Font.Georgia
         Height: =64
-        Size: =20
+        HintText: ="Enter your search...."
+        Size: =15
         Width: =681
-        X: =22
-        Y: =225
+        X: =331
+        Y: =171
         ZIndex: =12
 
-    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+    "SearchResults As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 0, 0, 1)
-        Height: =425
-        Items: =If(TextInput1.Text="",Contacts,Filter(Contacts, 'Full Name' = TextInput1.Text))
+        Height: =321
+        Items: |-
+            =If(TextInput1.Text="All",Contacts,Filter(Contacts, 'Full Name' = TextInput1.Text));
+            If(TextInput1.Text!="",SearchResults.Visible=true,)
         Layout: =Layout.Vertical
+        ShowNavigation: =true
+        ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =Min(160, Self.Height - 60)
+        TemplateSize: =82
         Width: =691
-        X: =12
-        Y: =342
+        X: =67
+        Y: =370
         ZIndex: =13
 
-        Image6 As image:
-            Height: =128
+        Photo As image:
+            Height: =62
             Image: =ThisItem.'Entity Image'
             OnSelect: =Select(Parent)
-            Width: =128
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Width: =95
+            X: =35
+            Y: =9
             ZIndex: =1
 
-        Title4 As label:
+        FullName As label:
+            Color: =RGBA(255, 255, 255, 1)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -94,28 +102,30 @@
             PaddingTop: =0
             Text: =ThisItem.'Full Name'
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image6.Width - 104
-            X: =Image6.X + Image6.Width + 24
-            Y: =44
+            Width: =Parent.TemplateWidth - Photo.Width - 104
+            X: =146
+            Y: =5
             ZIndex: =2
 
-        Subtitle5 As label:
-            Height: =Self.Size * 1.8
+        Country As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =37
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Email
+            Text: =ThisItem.'Address 1'
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title4.Width
-            X: =Title4.X
-            Y: =Title4.Y + Title4.Height + 4
+            Width: =232
+            X: =406
+            Y: =44
             ZIndex: =3
 
         NextArrow4 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            Height: =60
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =41
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
             PaddingBottom: =10
@@ -124,46 +134,57 @@
             PaddingTop: =10
             TabIndex: =0
             Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Width: =37
+            X: =654
+            Y: =20
             ZIndex: =4
 
         Separator5 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
+        City As label:
+            Color: =RGBA(255, 255, 255, 1)
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.City
+            X: =193
+            Y: =41
+            ZIndex: =6
+
     Icon5 As icon.Search:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         Height: =38
         Icon: =Icon.Search
         Width: =34
-        X: =654
-        Y: =238
+        X: =1012
+        Y: =184
         ZIndex: =14
 
-    "Gallery4 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+    "LatestNews As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(255, 255, 255, 1)
         Height: =517
         Items: =CustomGallerySample
         TemplatePadding: =0
         TemplateSize: =323
-        Width: =556
-        X: =810
+        Width: =486
+        X: =880
         Y: =249
         ZIndex: =16
 
         Image8 As image:
-            Height: =172
+            Height: =62
             OnSelect: =Select(Parent)
-            Width: =268
+            Width: =117
             X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
             Y: =16
             ZIndex: =1
 
         Title6 As label:
+            Color: =RGBA(255, 255, 255, 1)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -178,6 +199,7 @@
             ZIndex: =2
 
         Subtitle7 As label:
+            Color: =RGBA(255, 255, 255, 1)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0

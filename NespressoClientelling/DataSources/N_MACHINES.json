@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "demo_n_machines",
+    "MaxGetRowsCount": 500,
     "Name": "N_MACHINES",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

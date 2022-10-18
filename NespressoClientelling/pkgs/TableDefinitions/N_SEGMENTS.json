@@ -2,10 +2,6 @@
   "DatasetName": "default.cds",
   "EntityName": "N_SEGMENTS",
   "InstanceUrl": "https://org4f64dcaa.crm4.dynamics.com/",
-  "LocalReferenceDSJson": {
-    "entitySetName": "demo_n_segmentses",
-    "logicalName": "demo_n_segments"
-  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org4f64dcaa.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('demo_n_segments')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",
