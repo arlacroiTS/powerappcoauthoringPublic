@@ -3,13 +3,13 @@
     "'General Info' As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         BorderColor: =RGBA(179, 179, 179, 1)
         BorderThickness: =1
-        Height: =581
+        Height: =535
         Items: =Filter(Contacts,Email=SelectedCustomer)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =581
-        Width: =443
+        TemplateSize: =534
+        Width: =475
         Y: =127
         ZIndex: =1
 
@@ -134,7 +134,7 @@
         TemplatePadding: =0
         TemplateSize: =68
         Width: =545
-        X: =442
+        X: =820
         Y: =167
         ZIndex: =1
 
@@ -207,9 +207,9 @@
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =130
-        Width: =377
-        Y: =687
+        TemplateSize: =81
+        Width: =477
+        Y: =662
         ZIndex: =20
 
         Subtitle2 As label:
@@ -269,14 +269,14 @@
 
     "Gallery1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 0, 0, 1)
-        Height: =347
+        Height: =319
         Items: =N_RECOMMENDATIONS
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =195
         Width: =533
-        X: =442
+        X: =820
         Y: =421
         ZIndex: =31
 
@@ -389,7 +389,7 @@
         Size: =20
         Text: ="Segment"
         Width: =545
-        X: =442
+        X: =820
         Y: =125
         ZIndex: =32
 
@@ -399,7 +399,7 @@
         Size: =20
         Text: ="Recommendations"
         Width: =545
-        X: =443
+        X: =821
         Y: =376
         ZIndex: =33
 
@@ -412,7 +412,154 @@
         HoverFill: =Self.Fill
         PressedFill: =Self.Fill
         Width: =200
-        X: =209
-        Y: =647
+        X: =195
+        Y: =573
         ZIndex: =34
+
+    Label15_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =20
+        Text: ="Machine"
+        Width: =343
+        X: =477
+        Y: =127
+        ZIndex: =35
+
+    "Gallery5 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+        Height: =301
+        Items: =N_MACHINES
+        Layout: =Layout.Vertical
+        TemplatePadding: =4
+        TemplateSize: =272
+        Width: =345
+        X: =475
+        Y: =170
+        ZIndex: =36
+
+        ProfileImage1 As image:
+            Height: =64
+            OnSelect: =Select(Parent)
+            Width: =64
+            X: =16
+            Y: =16
+            ZIndex: =1
+
+        Title3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 112
+            X: =96
+            Y: =ProfileImage1.Y + (ProfileImage1.Height / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Image4 As image:
+            Height: =76
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            Width: =305
+            X: =16
+            Y: =96
+            ZIndex: =3
+
+        Body2 As label:
+            AutoHeight: =true
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Created On'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 32
+            X: =16
+            Y: =Image4.Y + Image4.Height + 16
+            ZIndex: =4
+
+    Label15_3 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =20
+        Text: ="Preffered caps"
+        Width: =343
+        X: =477
+        Y: =460
+        ZIndex: =37
+
+    "Gallery6 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =265
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =98
+        Width: =343
+        X: =477
+        Y: =503
+        ZIndex: =38
+
+        Image6 As image:
+            Height: =59
+            OnSelect: =Select(Parent)
+            Width: =90
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleHeading
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image6.Width - 104
+            X: =Image6.X + Image6.Width + 24
+            Y: =17
+            ZIndex: =2
+
+        Subtitle4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title4.Width
+            X: =Title4.X
+            Y: =Title4.Y + Title4.Height + 4
+            ZIndex: =3
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
 
