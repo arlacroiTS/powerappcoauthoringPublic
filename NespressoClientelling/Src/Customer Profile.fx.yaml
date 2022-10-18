@@ -38,7 +38,7 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =291
             X: =162
-            Y: =253
+            Y: =220
             ZIndex: =3
 
         Separator7 As rectangle:
@@ -132,7 +132,7 @@
             OnSelect: =Select(Parent)
             Width: =50
             X: =32
-            Y: =253
+            Y: =220
             ZIndex: =15
 
         icoEmail As icon.Mail:

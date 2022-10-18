@@ -1861,7 +1861,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryBody.ID%",
       "Name": "CstPhone",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2830,7 +2830,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icoEmail",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3347,7 +3347,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icoPhone",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
