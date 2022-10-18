@@ -272,46 +272,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "GalleryVisible"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "GalleryVisible"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Photo.Image"
                 }
               ],
