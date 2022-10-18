@@ -55,22 +55,6 @@
             Y: =88
             ZIndex: =3
 
-        NextArrow6 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =60
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
-
         Separator7 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
@@ -135,45 +119,15 @@
             ZIndex: =9
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =218
+        Height: =224
         Items: =N_SEGMENTS
         Layout: =Layout.Vertical
         TemplatePadding: =0
-        TemplateSize: =216
-        Width: =575
-        X: =440
-        Y: =127
+        TemplateSize: =68
+        Width: =545
+        X: =442
+        Y: =167
         ZIndex: =1
-
-        Title4 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Name
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        NextArrow7 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =60
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =2
 
         Separator6 As rectangle:
             Height: =1
@@ -181,6 +135,16 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
+
+        Label14 As label:
+            Height: =25
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.Name
+            Width: =442
+            X: =38
+            Y: =20
+            ZIndex: =4
 
     Icon1 As icon.Home:
         Color: =RGBA(255, 255, 255, 1)
@@ -235,8 +199,8 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =442
-        Width: =354
-        X: =1012
+        Width: =377
+        X: =987
         Y: =130
         ZIndex: =20
 
@@ -296,15 +260,15 @@
             ZIndex: =7
 
     "Gallery1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
-        Height: =287
+        Height: =347
         Items: =N_RECOMMENDATIONS
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =195
-        Width: =572
-        X: =443
-        Y: =345
+        Width: =533
+        X: =442
+        Y: =421
         ZIndex: =31
 
         Image1 As image:
@@ -408,4 +372,24 @@
             X: =896
             Y: =43
             ZIndex: =30
+
+    Label15 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="Segment"
+        Width: =545
+        X: =442
+        Y: =125
+        ZIndex: =32
+
+    Label15_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="Recommendations"
+        Width: =545
+        X: =443
+        Y: =376
+        ZIndex: =33
 
