@@ -3,12 +3,12 @@
     "'General Info' As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         BorderColor: =RGBA(179, 179, 179, 1)
         BorderThickness: =1
-        Height: =535
+        Height: =480
         Items: =Filter(Contacts,Email=SelectedCustomer)
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =534
+        TemplateSize: =535
         Width: =475
         Y: =127
         ZIndex: =1
@@ -114,7 +114,7 @@
             Text: =ThisItem.N_Loyalty
             Width: =399
             X: =42
-            Y: =448
+            Y: =366
             ZIndex: =10
 
         CstCity As label:
@@ -148,7 +148,7 @@
             OnSelect: =Select(Parent)
             Text: ="CSAT"
             X: =42
-            Y: =395
+            Y: =422
             ZIndex: =14
 
     "Segment As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
@@ -194,15 +194,15 @@
     "Cases As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(179, 179, 179, 1)
         BorderThickness: =1
-        Height: =106
+        Height: =149
         Items: =Filter(Requests,'Email Address'= SelectedCustomer)
         Layout: =Layout.Vertical
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =81
+        TemplateSize: =76
         Width: =477
-        Y: =662
+        Y: =607
         ZIndex: =20
 
         Subtitle2 As label:
@@ -221,7 +221,7 @@
 
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            Height: =60
+            Height: =36
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
             PaddingBottom: =10
@@ -230,9 +230,9 @@
             PaddingTop: =10
             TabIndex: =0
             Tooltip: ="View item details"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Width: =45
+            X: =427
+            Y: =32
             ZIndex: =4
 
         Separator2 As rectangle:
@@ -247,8 +247,8 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Case Title'
             Width: =299
-            X: =110
-            Y: =53
+            X: =119
+            Y: =44
             ZIndex: =6
 
         Label11 As label:
@@ -257,6 +257,7 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.'Case Number'
             Width: =286
+            X: =36
             Y: =10
             ZIndex: =7
 
@@ -342,7 +343,7 @@
         PressedFill: =Self.Fill
         Width: =200
         X: =249
-        Y: =521
+        Y: =548
         ZIndex: =34
 
     Label15_2 As label:
