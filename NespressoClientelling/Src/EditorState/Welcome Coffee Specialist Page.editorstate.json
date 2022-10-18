@@ -800,7 +800,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Group2": {
+    "Group1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "X",
@@ -818,7 +818,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Group2",
+      "Name": "Group1",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
