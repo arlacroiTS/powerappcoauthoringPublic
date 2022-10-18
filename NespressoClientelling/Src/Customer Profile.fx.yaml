@@ -63,6 +63,8 @@
             ZIndex: =5
 
         Body1_2 As label:
+            Color: =RGBA(141, 198, 63, 1)
+            FontWeight: =FontWeight.Bold
             Height: =39
             OnSelect: =Select(Parent)
             PaddingBottom: =0
