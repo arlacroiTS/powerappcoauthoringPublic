@@ -73,7 +73,7 @@
         Height: =321
         Items: |-
             =If(TextInput1.Text="All",Contacts,Filter(Contacts, 'Full Name' = TextInput1.Text));
-            If(TextInput1.Text="",Set(GalleryVisible,false),Set(GalleryVisible,true));
+            //If(TextInput1.Text="",Set(GalleryVisible,false),Set(GalleryVisible,true));
         Layout: =Layout.Vertical
         ShowNavigation: =true
         ShowScrollbar: =false
