@@ -60,7 +60,7 @@
         BorderThickness: =4
         Default: =""
         Font: =Font.Georgia
-        Height: =64
+        Height: =41
         HintText: ="Enter your search...."
         Size: =15
         Width: =681
@@ -162,7 +162,7 @@
         Icon: =Icon.Search
         Width: =34
         X: =1012
-        Y: =184
+        Y: =174
         ZIndex: =14
 
     "LatestNews As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
