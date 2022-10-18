@@ -9,7 +9,7 @@
         DisplayMode: =DisplayMode.Edit
         FillColor: =RGBA(0, 0, 0, 1)
         FontColor: =RGBA(255, 255, 255, 1)
-        Height: =30
+        Height: =33
         Width: =257
         X: =32
         Y: =156

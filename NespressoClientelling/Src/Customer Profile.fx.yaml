@@ -395,3 +395,16 @@
         Y: =376
         ZIndex: =33
 
+    Rating1 As rating:
+        Default: =3
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        FocusedBorderColor: =Self.BorderColor
+        Height: =40
+        HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
+        Width: =200
+        X: =209
+        Y: =647
+        ZIndex: =34
+
