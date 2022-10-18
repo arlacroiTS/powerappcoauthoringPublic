@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "demo_n_recommendation",
+    "MaxGetRowsCount": 500,
     "Name": "N_RECOMMENDATIONS",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
@@ -26,6 +27,7 @@
       "demo_name": "Name",
       "demo_productimage": "ProductImage",
       "demo_productimageid": "demo_ProductImageId",
+      "demo_salespitch": "Sales Pitch",
       "importsequencenumber": "Import Sequence Number",
       "modifiedby": "Modified By",
       "modifiedon": "Modified On",

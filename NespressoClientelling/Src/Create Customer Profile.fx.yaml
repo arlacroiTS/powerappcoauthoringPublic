@@ -8,10 +8,10 @@
         DisplayMode: =DisplayMode.Edit
         FillColor: =RGBA(0, 0, 0, 1)
         FontColor: =RGBA(255, 255, 255, 1)
-        Height: =567
+        Height: =290
         Width: =610
-        X: =700
-        Y: =155
+        X: =684
+        Y: =309
         ZIndex: =1
 
     Label1_2 As label:

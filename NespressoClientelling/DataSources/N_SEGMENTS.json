@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "demo_n_segments",
+    "MaxGetRowsCount": 500,
     "Name": "N_SEGMENTS",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
