@@ -27,21 +27,7 @@
             Y: =16
             ZIndex: =1
 
-        Subtitle8 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Email
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =58
-            ZIndex: =2
-
-        Body1 As label:
+        CstPhone As label:
             Height: =37
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -50,9 +36,9 @@
             PaddingTop: =0
             Text: =ThisItem.'Business Phone'
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =88
+            Width: =291
+            X: =162
+            Y: =253
             ZIndex: =3
 
         Separator7 As rectangle:
@@ -62,7 +48,7 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =5
 
-        Body1_2 As label:
+        CstStatus As label:
             Color: =RGBA(141, 198, 63, 1)
             FontWeight: =FontWeight.Bold
             Height: =39
@@ -74,36 +60,23 @@
             Text: =ThisItem.Status
             VerticalAlign: =VerticalAlign.Top
             Width: =110
-            X: =364
-            Y: =19
+            X: =42
+            Y: =353
             ZIndex: =7
 
-        Body1_3 As label:
-            Height: =33
+        CstEmail As label:
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Preferences Notification'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =241
-            ZIndex: =8
-
-        Title7_1 As label:
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            Size: =13
             Text: =ThisItem.Email
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =52
+            Width: =291
+            X: =162
+            Y: =294
             ZIndex: =9
 
         CstLoyalty As label:
@@ -112,9 +85,8 @@
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             Text: =ThisItem.N_Loyalty
-            Width: =399
-            X: =42
-            Y: =366
+            X: =324
+            Y: =12
             ZIndex: =10
 
         CstCity As label:
