@@ -14,6 +14,7 @@
         ZIndex: =1
 
         Title7 As label:
+            FontWeight: =FontWeight.Bold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -21,6 +22,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Text: =ThisItem.'Full Name'
+            Underline: =true
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
@@ -310,8 +312,9 @@
     Label15 As label:
         FontWeight: =FontWeight.Bold
         Height: =45
-        Size: =20
+        Size: =18
         Text: ="Segment"
+        Underline: =true
         Width: =545
         X: =820
         Y: =134
@@ -320,8 +323,9 @@
     Label15_1 As label:
         FontWeight: =FontWeight.Bold
         Height: =45
-        Size: =20
+        Size: =18
         Text: ="Recommendations"
+        Underline: =true
         Width: =545
         X: =821
         Y: =376
@@ -343,8 +347,9 @@
     Label15_2 As label:
         FontWeight: =FontWeight.Bold
         Height: =43
-        Size: =20
+        Size: =18
         Text: ="Machine"
+        Underline: =true
         Width: =343
         X: =477
         Y: =136
@@ -410,8 +415,9 @@
     Label15_3 As label:
         FontWeight: =FontWeight.Bold
         Height: =43
-        Size: =20
+        Size: =18
         Text: ="Preffered caps"
+        Underline: =true
         Width: =343
         X: =477
         Y: =460
