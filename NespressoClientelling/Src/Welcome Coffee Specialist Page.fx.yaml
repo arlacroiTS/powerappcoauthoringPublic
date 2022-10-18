@@ -78,7 +78,6 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =82
-        Visible: =GalleryVisible
         Width: =691
         X: =67
         Y: =370
