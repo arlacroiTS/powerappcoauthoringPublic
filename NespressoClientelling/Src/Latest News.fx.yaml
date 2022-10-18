@@ -1,2 +1,46 @@
 "'Latest News' As screen":
 
+    "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        Items: =Addresses
+        TemplatePadding: =0
+        TemplateSize: =Min(440, Self.Height - 60)
+        X: =166
+        Y: =193
+        ZIndex: =1
+
+        Image5 As image:
+            Height: =296
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth - 32
+            X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
+            Y: =16
+            ZIndex: =1
+
+        Title5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Address Name'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 64
+            X: =32
+            Y: =Image5.Y + Image5.Height + 16
+            ZIndex: =2
+
+        Subtitle5 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'ZIP/Postal Code'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title5.Width
+            X: =Title5.X
+            Y: =401
+            ZIndex: =3
+

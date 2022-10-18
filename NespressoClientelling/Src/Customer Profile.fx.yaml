@@ -7,6 +7,54 @@
         Width: =1366
         ZIndex: =1
 
+    "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =218
+        Items: =N_SEGMENTS
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =216
+        Width: =464
+        X: =439
+        Y: =266
+        ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow7 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Separator6 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
     "'General Info' As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         BorderColor: =RGBA(179, 179, 179, 1)
         BorderThickness: =1
@@ -45,7 +93,7 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =63
+            Y: =58
             ZIndex: =2
 
         Body1 As label:
@@ -59,7 +107,7 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =108
+            Y: =88
             ZIndex: =3
 
         NextArrow6 As icon.ChevronRight:
@@ -109,8 +157,8 @@
             Text: =ThisItem.Status
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =247
+            X: =42
+            Y: =124
             ZIndex: =7
 
         Body1_3 As label:
@@ -124,8 +172,93 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =253
+            Y: =241
             ZIndex: =8
+
+        Title7_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Email
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =52
+            ZIndex: =9
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =205
+        Items: =N_RECOMMENDATIONS
+        Layout: =Layout.Vertical
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =205
+        Width: =463
+        X: =439
+        Y: =481
+        ZIndex: =1
+
+        Title2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Created On'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title2.Y + Title2.Height + 4
+            ZIndex: =2
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Label9 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Name
+            X: =40
+            Y: =40
+            ZIndex: =5
 
     Icon1 As icon.Home:
         Color: =RGBA(255, 255, 255, 1)
@@ -269,8 +402,8 @@
         OnSelect: ='PowerApp->Addanewrow'.Run(); Refresh(Requests); Navigate('Customer Profile');
         Text: ="Create ticket"
         Width: =344
-        X: =1003
-        Y: =720
+        X: =953
+        Y: =718
         ZIndex: =18
 
     "Recommendation As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
@@ -287,15 +420,6 @@
         X: =903
         Y: =266
         ZIndex: =20
-
-        Image3 As image:
-            Height: =128
-            Image: =ThisItem.'Entity Image'
-            OnSelect: =Select(Parent)
-            Width: =128
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
 
         Subtitle2 As label:
             Height: =Self.Size * 1.8
@@ -351,4 +475,27 @@
             X: =56
             Y: =20
             ZIndex: =7
+
+    Label8 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="General Information"
+        Width: =439
+        Y: =226
+        ZIndex: =21
+
+    Label8_1 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Customer profile"
+        Width: =439
+        X: =439
+        Y: =227
+        ZIndex: =22
+
+    Label8_2 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Scoring and tickets"
+        Width: =439
+        X: =902
+        Y: =226
+        ZIndex: =23
 

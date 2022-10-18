@@ -75,5 +75,25 @@
     },
     "dependents": [],
     "id": "a6619bd9-7326-4d5d-86c0-cb959902613d"
+  },
+  "c796ffb4-3124-40e6-8124-2cf0066b153b": {
+    "connectionParameters": {
+      "apiEndpoint": "https://api.cognitive.microsoft.com/bing/v7.0/",
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Bing Search",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1516/1.0.1516.2558/bingsearch/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_bingsearch",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_bingsearch/connections/a0fef8d895784c4da6799f019c415999",
+      "xrmConnectionReferenceLogicalName": "new_sharedbingsearch_5437b"
+    },
+    "datasets": {},
+    "dataSources": [
+      "BingSearch"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c796ffb4-3124-40e6-8124-2cf0066b153b"
   }
 }
