@@ -1,0 +1,50 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="PowerApp-&gt;Addanewrow" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="PowerApp -&gt; Add a new row" />
+  <grammars>
+    <jsonTypes targetNamespace="https://europe-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ManualTriggerInput_Addanewrow_Firstname_def" />
+      <string name="ManualTriggerInput_Addanewrow_Lastname_def" />
+      <string name="ManualTriggerInput_Addanewrow_Email_def" />
+      <string name="ManualTriggerInput_Addanewrow_Streetaddress1_def" />
+      <string name="ManualTriggerInput_Addanewrow_City_def" />
+      <string name="ManualTriggerInput_Addanewrow_Country_def" />
+      <object name="ManualTriggerInput">
+        <property name="Addanewrow_Firstname" type="string" />
+        <property name="Addanewrow_Lastname" type="string" />
+        <property name="Addanewrow_Email" type="string" />
+        <property name="Addanewrow_Streetaddress1" type="string" />
+        <property name="Addanewrow_City" type="string" />
+        <property name="Addanewrow_Country" type="string" />
+      </object>
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-002.azure-apim.net/apim/logicflows">
+    <resource path="/{connectionId}/triggers/manual/run">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="POST" id="Run">
+        <doc title="Runs a logic flow trigger." />
+        <request>
+          <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
+            <doc title="The api version" />
+          </param>
+          <representation mediaType="application/json">
+            <param style="plain" name="Addanewrow_Firstname" path="/Addanewrow_Firstname" type="xs:string" required="true" />
+            <param style="plain" name="Addanewrow_Lastname" path="/Addanewrow_Lastname" type="xs:string" required="true" />
+            <param style="plain" name="Addanewrow_Email" path="/Addanewrow_Email" type="xs:string" required="true" />
+            <param style="plain" name="Addanewrow_Streetaddress1" path="/Addanewrow_Streetaddress1" type="xs:string" required="true" />
+            <param style="plain" name="Addanewrow_City" path="/Addanewrow_City" type="xs:string" required="true" />
+            <param style="plain" name="Addanewrow_Country" path="/Addanewrow_Country" type="xs:string" required="true" />
+          </representation>
+        </request>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="logicflows" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

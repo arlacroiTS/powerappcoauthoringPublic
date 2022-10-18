@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "ba438246-8623-4af0-ba9f-d8e9f3ae97e8",
+    "Name": "PowerApp->Addanewrow_1",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "f7fe2a46-e94e-ed11-bba3-000d3ad8bd3a"
+  }
+]
