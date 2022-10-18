@@ -3350,6 +3350,14 @@
           "InvariantPropertyName": "ShowNavigation",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "GalleryTemplateChildName": "galleryTemplate5",
@@ -3494,6 +3502,11 @@
         {
           "Category": "Design",
           "PropertyName": "ShowNavigation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
           "RuleProviderType": "Unknown"
         }
       ],

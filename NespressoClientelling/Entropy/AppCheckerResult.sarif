@@ -61,9 +61,9 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 103,
+                  "charOffset": 158,
                   "snippet": {
-                    "text": "!"
+                    "text": ";"
                   }
                 }
               },
@@ -97,10 +97,9 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 104,
+                  "charOffset": 159,
                   "snippet": {
-                    "text": "="
+                    "text": ""
                   }
                 }
               },
@@ -117,7 +116,7 @@
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadToken",
+          "ruleId": "app-ErrOperandExpected",
           "ruleIndex": 1
         },
         {
@@ -134,47 +133,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 2,
-                  "charOffset": 105,
-                  "snippet": {
-                    "text": "\"\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
+                  "charLength": 25,
                   "charOffset": 107,
                   "snippet": {
-                    "text": ","
+                    "text": "Set(GalleryVisible,false)"
                   }
                 }
               },
@@ -191,456 +153,82 @@
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 108,
-                  "snippet": {
-                    "text": "SearchResults"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 121,
-                  "snippet": {
-                    "text": "."
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 122,
-                  "snippet": {
-                    "text": "Visible"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 129,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 130,
-                  "snippet": {
-                    "text": "true"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 134,
-                  "snippet": {
-                    "text": ","
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 130,
-                  "snippet": {
-                    "text": "true"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 122,
-                  "snippet": {
-                    "text": "Visible"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 108,
-                  "snippet": {
-                    "text": "SearchResults"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 105,
-                  "snippet": {
-                    "text": "\"\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 103,
-                  "snippet": {
-                    "text": "!"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 51,
-                  "charOffset": 85,
-                  "snippet": {
-                    "text": "If(TextInput1.Text!=\"\",SearchResults.Visible=true,)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Welcome Coffee Specialist Page",
-                "type": "'Welcome Coffee Specialist Page'.SearchResults"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "1",
-              "2"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadArityMinimum",
+          "ruleId": "app-ErrBehaviorPropertyExpected",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 24,
+                  "charOffset": 133,
+                  "snippet": {
+                    "text": "Set(GalleryVisible,true)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Welcome Coffee Specialist Page",
+                "type": "'Welcome Coffee Specialist Page'.SearchResults"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBehaviorPropertyExpected",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 158,
+                  "snippet": {
+                    "text": ";"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Welcome Coffee Specialist Page",
+                "type": "'Welcome Coffee Specialist Page'.SearchResults"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -678,6 +266,46 @@
           },
           "ruleId": "app-ErrOperatorExpected",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Welcome Coffee Specialist Page'.SearchResults.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "GalleryVisible"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Welcome Coffee Specialist Page",
+                "type": "'Welcome Coffee Specialist Page'.SearchResults"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "GalleryVisible"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1281,16 +909,16 @@
               }
             },
             {
-              "id": "app-ErrBadToken",
+              "id": "app-ErrOperandExpected",
               "messageStrings": {
                 "issue": {
-                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
+                  "text": "Expected an operand. The formula or expression expects a valid operand. For example, you can add the operand '2' to the expression ' 1 +_' so that the result is '3'. Or, you can add the operand \"there\" to the expression '\"Hi \"& _ ' so that the result is 'Hi there'."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove or replace the unexpected characters."
+                  "Supply an operand value that will complete the expression. Ensure that the operand's type (text, number, date, or true/false) fits the expression. Match numbers with numbers, text with text, and so on. For example, '1 + \"Hi\"' isn't valid, but '1 + 2' is valid."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
@@ -1298,14 +926,17 @@
               }
             },
             {
-              "id": "app-ErrBadArityMinimum",
+              "id": "app-ErrBehaviorPropertyExpected",
               "messageStrings": {
                 "issue": {
-                  "text": "Invalid number of arguments: received {0}, expected {1} or more."
+                  "text": "Behavior function in a non-behavior property. You can't use this property to change values elsewhere in the app."
                 }
               },
               "properties": {
                 "componentType": "app",
+                "howToFix": [
+                  "Move the behavior function to a behavior-based property."
+                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
