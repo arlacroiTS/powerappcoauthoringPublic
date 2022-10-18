@@ -1,51 +1,6 @@
 "'Welcome Coffee Specialist Page' As screen":
-    BackgroundImage: =background
+    BackgroundImage: =Background
     OnVisible: =Set(GalleryVisible,false);
-
-    Label1_1 As label:
-        Fill: =RGBA(0, 0, 0, 1)
-        Height: =123
-        Text: =""
-        Width: =1366
-        ZIndex: =1
-
-    Icon1_1 As icon.Home:
-        Color: =RGBA(255, 255, 255, 1)
-        Icon: =Icon.Home
-        X: =1230
-        Y: =29
-        ZIndex: =2
-
-    Icon3_1 As icon.Hamburger:
-        Color: =RGBA(255, 255, 255, 1)
-        Icon: =Icon.Hamburger
-        X: =48
-        Y: =24
-        ZIndex: =3
-
-    Label2_1 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =23
-        Text: =User().FullName
-        Width: =406
-        X: =366
-        Y: =50
-        ZIndex: =4
-
-    Label3_1 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        Height: =23
-        Text: =User().Email
-        Width: =406
-        X: =597
-        Y: =41
-        ZIndex: =5
-
-    Image2_1 As image:
-        Image: ='R (1)'
-        X: =168
-        Y: =11
-        ZIndex: =6
 
     Icon4 As icon.Add:
         Color: =RGBA(0, 0, 0, 1)
@@ -60,17 +15,17 @@
         BorderThickness: =4
         Default: =""
         Font: =Font.Georgia
-        Height: =41
+        Height: =57
         HintText: ="Enter your search...."
         Size: =15
         Width: =681
-        X: =331
+        X: =330
         Y: =171
         ZIndex: =12
 
     "SearchResults As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(0, 0, 0, 1)
-        Height: =321
+        Height: =362
         Items: |
             =If(TextInput1.Text="All",Contacts,Filter(Contacts, 'Full Name' = TextInput1.Text))
         Layout: =Layout.Vertical
@@ -78,9 +33,9 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =82
-        Width: =691
-        X: =67
-        Y: =370
+        Width: =741
+        X: =48
+        Y: =308
         ZIndex: =13
 
         Photo As image:
@@ -160,21 +115,21 @@
         Height: =38
         Icon: =Icon.Search
         Width: =34
-        X: =1012
-        Y: =174
+        X: =1021
+        Y: =180
         ZIndex: =14
 
     "LatestNews As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(255, 255, 255, 1)
-        Height: =517
+        Height: =480
         Items: =CustomGallerySample
         ShowNavigation: =true
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =323
-        Width: =486
-        X: =880
-        Y: =249
+        TemplateSize: =336
+        Width: =490
+        X: =866
+        Y: =285
         ZIndex: =16
 
         Image8 As image:
@@ -214,4 +169,66 @@
             X: =Title6.X
             Y: =Title6.Y + Title6.Height + 8
             ZIndex: =3
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =19
+
+        Label1_1 As label:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =123
+            Text: =""
+            Width: =1366
+            ZIndex: =1
+
+        Icon1_1 As icon.Home:
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Home
+            X: =1230
+            Y: =29
+            ZIndex: =2
+
+        Icon3_1 As icon.Hamburger:
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Hamburger
+            X: =48
+            Y: =24
+            ZIndex: =3
+
+        Label2_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =43
+            Size: =20
+            Text: =User().FullName
+            Width: =189
+            X: =357
+            Y: =43
+            ZIndex: =4
+
+        Image2_1 As image:
+            Image: ='R (1)'
+            X: =168
+            Y: =11
+            ZIndex: =6
+
+        Label6 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =50
+            Size: =20
+            Text: ="Nespresso My boutique"
+            Width: =333
+            X: =565
+            Y: =34
+            ZIndex: =17
+
+        Label10 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Size: =20
+            Text: ="> Welcome"
+            X: =896
+            Y: =41
+            ZIndex: =18
 
