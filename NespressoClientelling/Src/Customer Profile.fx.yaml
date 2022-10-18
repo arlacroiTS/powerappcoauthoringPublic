@@ -13,7 +13,7 @@
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =216
-        Width: =464
+        Width: =617
         X: =439
         Y: =266
         ZIndex: =1
@@ -197,12 +197,13 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =205
-        Width: =463
+        Width: =613
         X: =439
         Y: =481
         ZIndex: =1
 
         Title2 As label:
+            Align: =Right
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -217,6 +218,7 @@
             ZIndex: =1
 
         Subtitle3 As label:
+            Align: =Right
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -254,11 +256,20 @@
             ZIndex: =4
 
         Label9 As label:
+            Height: =46
             OnSelect: =Select(Parent)
             Text: =ThisItem.Name
-            X: =40
-            Y: =40
+            Width: =516
+            X: =32
+            Y: =108
             ZIndex: =5
+
+        Image1 As image:
+            Image: =ThisItem.ProductImage
+            OnSelect: =Select(Parent)
+            X: =32
+            Y: =8
+            ZIndex: =6
 
     Icon1 As icon.Home:
         Color: =RGBA(255, 255, 255, 1)
@@ -416,8 +427,8 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =442
-        Width: =455
-        X: =903
+        Width: =296
+        X: =1061
         Y: =266
         ZIndex: =20
 
