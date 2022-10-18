@@ -197,7 +197,7 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =76
-        Width: =477
+        Width: =475
         Y: =607
         ZIndex: =20
 
@@ -471,13 +471,6 @@
             X: =Title4.X
             Y: =Title4.Y + Title4.Height + 4
             ZIndex: =3
-
-        Separator1 As rectangle:
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =5
 
     Group1_1 As group:
         Height: =5
