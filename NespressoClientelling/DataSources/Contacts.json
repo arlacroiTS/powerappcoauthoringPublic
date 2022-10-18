@@ -2340,11 +2340,11 @@
         "OptionSetReferenceEntityName": "Contacts"
       },
       "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "msemr_name2use",
+        "OptionSetReferenceColumnName": "msemr_name3use",
         "OptionSetReferenceEntityName": "Contacts"
       },
       "OptionSetReferenceItem2": {
-        "OptionSetReferenceColumnName": "msemr_name3use",
+        "OptionSetReferenceColumnName": "msemr_name2use",
         "OptionSetReferenceEntityName": "Contacts"
       }
     },
@@ -2399,11 +2399,11 @@
     "OptionSetIsGlobal": true,
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "msemr_telecom2use",
+        "OptionSetReferenceColumnName": "msemr_telecom3use",
         "OptionSetReferenceEntityName": "Contacts"
       },
       "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "msemr_telecom3use",
+        "OptionSetReferenceColumnName": "msemr_telecom2use",
         "OptionSetReferenceEntityName": "Contacts"
       },
       "OptionSetReferenceItem2": {
@@ -2412,7 +2412,7 @@
       }
     },
     "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "msemr_telecom2use",
+    "RelatedColumnInvariantName": "msemr_telecom3use",
     "RelatedEntityName": "Contacts",
     "Type": "OptionSetInfo"
   },
