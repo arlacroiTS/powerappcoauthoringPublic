@@ -61,6 +61,7 @@
         Icon1_4 As icon.Home:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.Home
+            OnSelect: =Navigate('Welcome Coffee Specialist Page')
             X: =1230
             Y: =29
             ZIndex: =3

@@ -5,9 +5,10 @@
     Icon4 As icon.Add:
         Color: =RGBA(0, 0, 0, 1)
         Icon: =Icon.Add
+        OnSelect: =Navigate('Create Customer Profile')
         Tooltip: ="Create Customer Profile"
         X: =1266
-        Y: =148
+        Y: =157
         ZIndex: =10
 
     TextInput1 As text:
@@ -170,6 +171,12 @@
             Y: =Title6.Y + Title6.Height + 8
             ZIndex: =3
 
+    Image2 As image:
+        Image: =User().Image
+        X: =1257
+        Y: =11
+        ZIndex: =19
+
     Group2 As group:
         Height: =5
         Width: =5
@@ -184,13 +191,6 @@
             Width: =1366
             ZIndex: =1
 
-        Icon1_1 As icon.Home:
-            Color: =RGBA(255, 255, 255, 1)
-            Icon: =Icon.Home
-            X: =1230
-            Y: =29
-            ZIndex: =2
-
         Icon3_1 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
             Icon: =Icon.Hamburger
@@ -204,8 +204,8 @@
             Size: =20
             Text: =User().FullName
             Width: =189
-            X: =357
-            Y: =43
+            X: =1096
+            Y: =45
             ZIndex: =4
 
         Image2_1 As image:
@@ -220,15 +220,18 @@
             Size: =20
             Text: ="Nespresso My boutique"
             Width: =333
-            X: =565
-            Y: =34
+            X: =449
+            Y: =36
             ZIndex: =17
 
         Label10 As label:
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(151, 0, 0, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =43
             Size: =20
             Text: ="> Welcome"
-            X: =896
-            Y: =41
+            Width: =181
+            X: =757
+            Y: =40
             ZIndex: =18
 

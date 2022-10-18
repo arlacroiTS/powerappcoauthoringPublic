@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "ca097f2b-a404-4ec7-bbd1-bfdaaf09ac9c",
+    "Name": "Addanewcontact",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "99dfd08f-ea4e-ed11-bba3-000d3ad8bd3a"
+  }
+]
