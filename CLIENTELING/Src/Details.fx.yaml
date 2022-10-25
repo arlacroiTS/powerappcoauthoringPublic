@@ -1,0 +1,471 @@
+Details As screen:
+
+    ShadowMachine_4 As htmlViewer:
+        Height: =272
+        HtmlText: |
+            ="<div style='margin:5px;width:625x;height:250px;background-color:#FFFFFF;box-shadow:1px 4px 4px 1px  #ccc;border-radius:10px;'></div>"
+        Width: =648
+        X: =680
+        Y: =491
+        ZIndex: =1
+
+    "Order As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Height: =145
+        Items: ='SAPODATA[Sample]Connector'.ListSalesOrders().d.results
+        Layout: =Layout.Vertical
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =136
+        X: =680
+        Y: =529
+        ZIndex: =2
+
+        NetAmount As label:
+            Height: =33
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.SalesOrderID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =376
+            X: =66
+            Y: =18
+            ZIndex: =1
+
+        BillingStatus As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.BillingStatus
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =66
+            Y: =98
+            ZIndex: =2
+
+        Body3 As label:
+            Height: =44
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.NetAmount
+            VerticalAlign: =VerticalAlign.Top
+            Width: =219
+            X: =66
+            Y: =54
+            ZIndex: =3
+
+        NextArrow7 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =42
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =45
+            X: =579
+            Y: =30
+            ZIndex: =4
+
+        Separator9 As rectangle:
+            Height: =0
+            OnSelect: =Select(Parent)
+            Width: =623
+            X: =16
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label4 As label:
+            Height: =45
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: ="$"
+            Width: =61
+            X: =170
+            Y: =45
+            ZIndex: =6
+
+    ShadowMachine_2 As htmlViewer:
+        Height: =314
+        HtmlText: |
+            ="<div style='margin:5px;width:605x;height:275px;background-color:#FFFFFF;box-shadow:1px 4px 4px 1px  #ccc;border-radius:10px;'></div>"
+        Width: =648
+        X: =26
+        Y: =169
+        ZIndex: =3
+
+    ShadowMachine_1 As htmlViewer:
+        Height: =314
+        HtmlText: |
+            ="<div style='margin:5px;width:625x;height:275px;background-color:#FFFFFF;box-shadow:1px 4px 4px 1px  #ccc;border-radius:10px;'></div>"
+        Width: =648
+        X: =680
+        Y: =169
+        ZIndex: =4
+
+    "Case As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Height: =225
+        Items: =Requests
+        Layout: =Layout.Vertical
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =148
+        Width: =591
+        X: =708
+        Y: =208
+        ZIndex: =5
+
+        Title8 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Case Title'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle7 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Case Number'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =54
+            ZIndex: =2
+
+        Body2 As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Origin
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =94
+            ZIndex: =3
+
+        NextArrow5 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =42
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =45
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Body2_2 As label:
+            Height: =84
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.description
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =125
+            ZIndex: =6
+
+        Body2_3 As label:
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.adx_resolutiondate
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =219
+            ZIndex: =7
+
+    ShadowMachine_3 As htmlViewer:
+        Height: =271
+        HtmlText: |
+            ="<div style='margin:5px;width:625x;height:250px;background-color:#FFFFFF;box-shadow:1px 4px 4px 1px  #ccc;border-radius:10px;'></div>"
+        Width: =648
+        X: =26
+        Y: =492
+        ZIndex: =6
+
+    "Segment_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Height: =187
+        Items: =N_SEGMENTS
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =56
+        Width: =482
+        X: =82
+        Y: =543
+        ZIndex: =7
+
+        Separator6_1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+        Label14_1 As label:
+            Height: =25
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.Name
+            Width: =442
+            X: =38
+            Y: =16
+            ZIndex: =4
+
+    Label15_4 As label:
+        Font: =Font.'Dancing Script'
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="Segments"
+        Width: =545
+        X: =51
+        Y: =484
+        ZIndex: =8
+
+    PowerBI2 As powerbi:
+        BorderThickness: =0
+        DashboardId: ="8c07ed89-6f22-42a9-9ba8-591d5aca2dd4"
+        Height: =225
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=8c07ed89-6f22-42a9-9ba8-591d5aca2dd4&tileId=240f04bc-7920-402d-b8ea-55a71263018f&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVdFU1QtRVVST1BFLUUtUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        Width: =308
+        WorkspaceId: ="c6da2bbd-ce5a-4a00-ab18-846c1b3dad79"
+        X: =336
+        Y: =198
+        ZIndex: =9
+
+    PowerBI4 As powerbi:
+        BorderThickness: =0
+        DashboardId: ="13c8dc09-54d3-4120-bfa6-c38ca6d77be2"
+        Height: =215
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=13c8dc09-54d3-4120-bfa6-c38ca6d77be2&tileId=399901ac-d748-4d11-ba73-3eafe3d6ad94&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVdFU1QtRVVST1BFLUUtUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        Width: =258
+        WorkspaceId: ="c6da2bbd-ce5a-4a00-ab18-846c1b3dad79"
+        X: =60
+        Y: =208
+        ZIndex: =10
+
+    Label15_5 As label:
+        Font: =Font.'Dancing Script'
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="Insights"
+        Width: =545
+        X: =48
+        Y: =160
+        ZIndex: =11
+
+    Label15_6 As label:
+        Font: =Font.'Dancing Script'
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="Cases"
+        Width: =545
+        X: =693
+        Y: =160
+        ZIndex: =12
+
+    TABGeneralInfo_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =12
+
+        ShadowBtnGeneralInfo_1 As htmlViewer:
+            Height: =88
+            HtmlText: |
+                ="<div style='margin:5px;width:200px;height:60px;background-color:#FFFFFF;box-shadow:1px 4px 4px 1px  #ccc;border-radius:10px;'></div>"
+            OnSelect: =Navigate('Customer Profile')
+            Width: =246
+            X: =466
+            Y: =90
+            ZIndex: =22
+
+        GeneralInfoTab_1 As button:
+            BorderThickness: =0
+            Color: =RGBA(128, 128, 128, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =Normal
+            HoverFill: =DimGrey
+            OnSelect: =Navigate('Customer Profile')
+            Text: ="General Info >"
+            X: =500
+            Y: =114
+            ZIndex: =23
+
+    Icon6 As icon.Add:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =40
+        Icon: =Icon.Add
+        OnSelect: =CreateCaseFromPowerApp.Run(SelectedCustomerId); Navigate('Create Customer Profile')
+        Tooltip: ="Create a case"
+        Width: =46
+        X: =1285
+        Y: =154
+        ZIndex: =13
+
+    TABDetails_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =13
+
+        ShadowBtnDetails_1 As htmlViewer:
+            Height: =88
+            HtmlText: |
+                ="<div style='margin:5px;width:200px;height:60px;background-color:#FFFFFF;box-shadow:1px 4px 4px 1px  #ccc;border-radius:10px;'></div>"
+            Width: =246
+            X: =751
+            Y: =90
+            ZIndex: =24
+
+        DetailsTab_1 As button:
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =Semibold
+            HoverFill: =DimGrey
+            Text: ="Details >"
+            X: =785
+            Y: =114
+            ZIndex: =25
+
+    Label15_7 As label:
+        Font: =Font.'Dancing Script'
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =20
+        Text: ="SAP Orders"
+        Width: =545
+        X: =704
+        Y: =485
+        ZIndex: =14
+
+    Icon7_1 As icon.BackArrow:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =38
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =36
+        Y: =730
+        ZIndex: =26
+
+    Label2_4 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =43
+        Size: =18
+        Text: =User().FullName
+        Width: =189
+        X: =1139
+        Y: =41
+        ZIndex: =27
+
+    Header_2 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =34
+
+        Label1_4 As label:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =123
+            Text: =""
+            Width: =1366
+            ZIndex: =15
+
+        Image2_4 As image:
+            Image: ='R (1)'
+            OnSelect: =Navigate('Welcome Coffee Specialist Page')
+            X: =26
+            Y: =14
+            ZIndex: =18
+
+        Label6_3 As label:
+            Color: =RGBA(204, 204, 204, 1)
+            Height: =50
+            Size: =20
+            Text: ="Nespresso My boutique"
+            Width: =333
+            X: =449
+            Y: =36
+            ZIndex: =19
+
+        Label10_3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =47
+            Size: =18
+            Text: ="> Customer Profile"
+            Width: =296
+            X: =757
+            Y: =36
+            ZIndex: =20
+
+        Image2_11 As image:
+            Height: =66
+            Image: =User().Image
+            Width: =72
+            X: =1285
+            Y: =28
+            ZIndex: =21
+

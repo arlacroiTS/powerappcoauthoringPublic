@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "demo_n_segmentses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "demo_n_segments",
+    "MaxGetRowsCount": 500,
+    "Name": "N_SEGMENTS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "demo_n_segments_AsyncOperations": "System Jobs",
+      "demo_n_segments_BulkDeleteFailures": "Bulk Delete Failures",
+      "demo_n_segments_DuplicateBaseRecord": "Duplicate Records (demo_n_segments_DuplicateBaseRecord)",
+      "demo_n_segments_DuplicateMatchingRecord": "Duplicate Records (demo_n_segments_DuplicateMatchingRecord)",
+      "demo_n_segments_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "demo_N_SEGMENTS_N_SEGMENTSContacts_Contac": "Contacts",
+      "demo_n_segments_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "demo_n_segments_ProcessSession": "Process Sessions",
+      "demo_n_segments_SyncErrors": "Sync Errors",
+      "demo_n_segmentsid": "N_SEGMENTS",
+      "demo_name": "Name",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "N_SEGMENTS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "N_SEGMENTS (Views)",
+    "Name": "_demo_n_segments_views",
+    "RelatedEntityName": "N_SEGMENTS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3858b729-d8c5-435d-901b-e7672f7862e9": "N_SEGMENTS Advanced Find View",
+      "45bad943-64eb-44cf-b62a-fa0bccfafbbc": "N_SEGMENTS Associated View",
+      "6b918a24-8050-4877-9673-416b5c87b64a": "N_SEGMENTS Lookup View",
+      "e5f16bbe-b975-41c5-8c91-ee855cc804ff": "Active N_SEGMENTS",
+      "eb1226a1-6b9d-4635-bfa1-cf2ab8856d89": "Inactive N_SEGMENTS"
+    }
+  },
+  {
+    "DisplayName": "Status (N_SEGMENTS)",
+    "Name": "demo_n_segments_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "N_SEGMENTS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "N_SEGMENTS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (N_SEGMENTS)",
+    "Name": "demo_n_segments_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "N_SEGMENTS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "N_SEGMENTS",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,522 @@
+"'[OLD]Customer Profile' As screen":
+
+    "'General Info' As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        BorderColor: =RGBA(179, 179, 179, 1)
+        BorderThickness: =1
+        Height: =480
+        Items: =Filter(Contacts,Email=SelectedCustomer)
+        Layout: =Layout.Vertical
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =480
+        Width: =475
+        Y: =127
+        ZIndex: =1
+
+        Title7 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =22
+            Text: =ThisItem.'Full Name'
+            Underline: =true
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =10
+            ZIndex: =1
+
+        CstPhone As label:
+            Height: =37
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Business Phone'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =291
+            X: =162
+            Y: =220
+            ZIndex: =3
+
+        Separator7 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        CstStatus As label:
+            Color: =RGBA(141, 198, 63, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =39
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Status
+            VerticalAlign: =VerticalAlign.Top
+            Width: =110
+            X: =32
+            Y: =59
+            ZIndex: =7
+
+        CstEmail As label:
+            FontWeight: =FontWeight.Normal
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.Email
+            VerticalAlign: =VerticalAlign.Top
+            Width: =291
+            X: =162
+            Y: =294
+            ZIndex: =9
+
+        CstLoyalty As label:
+            Color: =RGBA(255, 191, 0, 1)
+            Font: =Font.'Dancing Script'
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.N_Loyalty
+            X: =324
+            Y: =12
+            ZIndex: =10
+
+        CstCity As label:
+            Height: =41
+            OnSelect: =Select(Parent)
+            Text: |-
+                =ThisItem.'Address 1: City'
+            Width: =291
+            X: =162
+            Y: =84
+            ZIndex: =11
+
+        CstAdr As label:
+            Height: =86
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Address 1'
+            Width: =291
+            X: =162
+            Y: =125
+            ZIndex: =12
+
+        Icon1 As icon.OfficeBuilding:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =51
+            Icon: =Icon.OfficeBuilding
+            OnSelect: =Select(Parent)
+            Width: =50
+            X: =32
+            Y: =109
+            ZIndex: =13
+
+        lblCsat As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Text: ="CSAT"
+            X: =33
+            Y: =352
+            ZIndex: =14
+
+        icoPhone As icon.Phone:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =46
+            Icon: =Icon.Phone
+            OnSelect: =Select(Parent)
+            Width: =50
+            X: =32
+            Y: =211
+            ZIndex: =15
+
+        icoEmail As icon.Mail:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =44
+            Icon: =Icon.Mail
+            OnSelect: =Select(Parent)
+            Width: =47
+            X: =33
+            Y: =280
+            ZIndex: =16
+
+    "Segment As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Height: =224
+        Items: =N_SEGMENTS
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =56
+        Width: =545
+        X: =820
+        Y: =167
+        ZIndex: =1
+
+        Separator6 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+        Label14 As label:
+            Height: =25
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.Name
+            Width: =442
+            X: =38
+            Y: =16
+            ZIndex: =4
+
+    btnCreateTicket As button:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =53
+        OnSelect: ='PowerApp->Addanewrow'.Run(); Refresh(Requests); Navigate('[OLD]Customer Profile');
+        Size: =22
+        Text: ="Create ticket"
+        Width: =341
+        X: =995
+        Y: =695
+        ZIndex: =18
+
+    "Cases As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(179, 179, 179, 1)
+        Height: =149
+        Items: =Filter(Requests,'Email Address'= SelectedCustomer)
+        Layout: =Layout.Vertical
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =76
+        Width: =475
+        Y: =607
+        ZIndex: =20
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =Text(ThisItem.Contact.Contact)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =
+            X: =
+            Y: =
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =36
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =45
+            X: =427
+            Y: =32
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Label7 As label:
+            Height: =28
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Case Title'
+            Width: =299
+            X: =119
+            Y: =44
+            ZIndex: =6
+
+        Label11 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Case Number'
+            Width: =286
+            X: =36
+            Y: =10
+            ZIndex: =7
+
+    "Recommendations As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Height: =274
+        Items: =N_RECOMMENDATIONS
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =195
+        Width: =532
+        X: =821
+        Y: =401
+        ZIndex: =31
+
+        Image1 As image:
+            Height: =101
+            Image: =ThisItem.ProductImage
+            OnSelect: =Select(Parent)
+            Width: =135
+            X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
+            Y: =16
+            ZIndex: =1
+
+        Title1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 64
+            X: =32
+            Y: =120
+            ZIndex: =2
+
+        Subtitle1 As label:
+            Height: =110
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.Description
+            VerticalAlign: =VerticalAlign.Top
+            Width: =190
+            X: =5
+            Y: =157
+            ZIndex: =3
+
+    Label15 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =22
+        Text: ="Segment"
+        Underline: =true
+        Width: =545
+        X: =820
+        Y: =124
+        ZIndex: =32
+
+    Label15_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        Size: =22
+        Text: ="Recommendations"
+        Underline: =true
+        Width: =545
+        X: =820
+        Y: =349
+        ZIndex: =33
+
+    ratingCSAT As rating:
+        Default: =3
+        DisabledFill: =Self.Fill
+        DisplayMode: =DisplayMode.Edit
+        FocusedBorderColor: =Self.BorderColor
+        Height: =40
+        HoverFill: =Self.Fill
+        PressedFill: =Self.Fill
+        Width: =200
+        X: =157
+        Y: =479
+        ZIndex: =34
+
+    Label15_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =22
+        Text: ="Machine"
+        Underline: =true
+        Width: =343
+        X: =477
+        Y: =126
+        ZIndex: =35
+
+    Label15_3 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =18
+        Text: ="Preffered caps"
+        Underline: =true
+        Width: =343
+        X: =477
+        Y: =460
+        ZIndex: =37
+
+    "PreferedCaps As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =245
+        Items: ='N_FAVORITE COFFEES'
+        Layout: =Layout.Vertical
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =70
+        Width: =343
+        X: =477
+        Y: =503
+        ZIndex: =38
+
+        Image6 As image:
+            Height: =59
+            Image: =ThisItem.CoffeeImage
+            OnSelect: =Select(Parent)
+            Width: =90
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image6.Width - 104
+            X: =Image6.X + Image6.Width + 24
+            Y: =17
+            ZIndex: =2
+
+    "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        Height: =255
+        Items: =N_MACHINES
+        TemplatePadding: =0
+        TemplateSize: =315
+        Width: =343
+        X: =477
+        Y: =193
+        ZIndex: =46
+
+        Image5 As image:
+            Height: =90
+            Image: =ThisItem.ImageMachine
+            OnSelect: =Select(Parent)
+            Width: =117
+            X: =15
+            Y: =15
+            ZIndex: =1
+
+        Title5 As label:
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =169
+            X: =146
+            Y: =48
+            ZIndex: =2
+
+        Subtitle5 As label:
+            Height: =105
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =ThisItem.MachineDescription
+            VerticalAlign: =VerticalAlign.Top
+            Width: =261
+            X: =27
+            Y: =126
+            ZIndex: =3
+
+    Group1_1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =20
+        ZIndex: =46
+
+        Label1_3 As label:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =123
+            Text: =""
+            Width: =1366
+            Y: =2
+            ZIndex: =39
+
+        Icon3_3 As icon.Hamburger:
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Hamburger
+            X: =48
+            Y: =26
+            ZIndex: =40
+
+        Label2_3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =43
+            Size: =20
+            Text: =User().FullName
+            Width: =189
+            X: =1096
+            Y: =47
+            ZIndex: =41
+
+        Image2_5 As image:
+            Image: ='R (1)'
+            OnSelect: =Navigate('Welcome Coffee Specialist Page')
+            X: =168
+            Y: =13
+            ZIndex: =42
+
+        Label6_1 As label:
+            Color: =RGBA(204, 204, 204, 1)
+            Height: =50
+            OnSelect: =Navigate('Welcome Coffee Specialist Page')
+            Size: =20
+            Text: ="Nespresso My boutique"
+            Width: =333
+            X: =449
+            Y: =38
+            ZIndex: =43
+
+        Label10_1 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =46
+            Size: =22
+            Text: ="> Customer 360"
+            Width: =266
+            X: =757
+            Y: =42
+            ZIndex: =44
+
+        Image2_3 As image:
+            Image: =User().Image
+            X: =1257
+            Y: =13
+            ZIndex: =45
+

@@ -1,0 +1,701 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "incidents",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "incident",
+    "MaxGetRowsCount": 500,
+    "Name": "Requests",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_customerid_value": "Customer",
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "activitiescomplete": "Activities Complete",
+      "actualserviceunits": "Actual Service Units",
+      "billedserviceunits": "Billed Service Units",
+      "blockedprofile": "Blocked Profile",
+      "bpf_incident_msdyn_iottocaseprocess": "IoT Alert to Case Process",
+      "caseage": "Case Age",
+      "caseorigincode": "Origin",
+      "casetypecode": "Case Type",
+      "checkemail": "Check Email",
+      "contractdetailid": "Contract Line",
+      "contractid": "Contract",
+      "contractservicelevelcode": "Service Level",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "customercontacted": "Customer Contacted",
+      "customersatisfactioncode": "Satisfaction",
+      "deactivatedon": "Deactivated On",
+      "decremententitlementterm": "Decrement Entitlement Terms",
+      "description": "Description",
+      "emailaddress": "Email Address",
+      "entitlementid": "Entitlement",
+      "entityimage": "Entity Image",
+      "entityimageid": "EntityImageId",
+      "escalatedon": "Escalated On",
+      "exchangerate": "Exchange Rate",
+      "existingcase": "Existing Case",
+      "firstresponsebykpiid": "First Response By KPI",
+      "firstresponsesent": "First Response Sent",
+      "firstresponseslastatus": "First Response SLA Status",
+      "followupby": "Follow Up By",
+      "followuptaskcreated": "Follow up Task Created",
+      "importsequencenumber": "Import Sequence Number",
+      "incident_actioncard": "Action Cards",
+      "Incident_ActivityPointers": "Activities",
+      "Incident_Annotation": "Notes",
+      "Incident_Appointments": "Appointments",
+      "Incident_AsyncOperations": "System Jobs",
+      "Incident_BulkDeleteFailures": "Bulk Delete Failures",
+      "incident_chats": "Teams chats",
+      "incident_connections1": "Connections (incident_connections1)",
+      "incident_connections2": "Connections (incident_connections2)",
+      "Incident_DuplicateBaseRecord": "Duplicate Records (Incident_DuplicateBaseRecord)",
+      "Incident_DuplicateMatchingRecord": "Duplicate Records (Incident_DuplicateMatchingRecord)",
+      "Incident_Emails": "Email Messages",
+      "incident_existingcase": "Cases (incident_existingcase)",
+      "Incident_Faxes": "Faxes",
+      "Incident_IncidentResolutions": "Case Resolutions",
+      "Incident_Letters": "Letters",
+      "Incident_MailboxTrackingFolder": "Mailbox Auto Tracking Folders",
+      "incident_master_incident": "Cases (incident_master_incident)",
+      "incident_msdyn_ocliveworkitems": "Conversations",
+      "incident_msdyn_ocsessions": "Sessions",
+      "incident_msfp_alerts": "Customer Voice alert",
+      "incident_msfp_surveyinvites": "Customer Voice survey invites",
+      "incident_msfp_surveyresponses": "Customer Voice survey responses",
+      "incident_OpportunityCloses": "Opportunity Close Activities",
+      "incident_OrderCloses": "Order Close Activities",
+      "incident_parent_incident": "Cases (incident_parent_incident)",
+      "Incident_Phonecalls": "Phone Calls",
+      "incident_phonetocaseprocess": "Phone To Case Process",
+      "incident_PostFollows": "Follows",
+      "incident_PostRegardings": "Post Regarding",
+      "incident_Posts": "Posts",
+      "incident_principalobjectattributeaccess": "Field Sharing",
+      "Incident_ProcessSessions": "Process Sessions",
+      "Incident_QueueItem": "Queue Items",
+      "incident_QuoteCloses": "Quote Close Activities",
+      "Incident_RecurringAppointmentMasters": "Recurring Appointments",
+      "Incident_ServiceAppointments": "Service Activities",
+      "Incident_SocialActivities": "Social Activities",
+      "Incident_SyncErrors": "Sync Errors",
+      "Incident_Tasks": "Tasks",
+      "incidentid": "Case",
+      "incidentstagecode": "Case Stage",
+      "influencescore": "Influence Score",
+      "isdecrementing": "Decrementing",
+      "isescalated": "Is Escalated",
+      "kbarticleid": "Knowledge Base Article",
+      "knowledgearticle_incidents": "Knowledge Article Incidents",
+      "KnowledgeBaseRecord_Incident": "Knowledge Base Records",
+      "lastinteraction": "Last Interaction",
+      "lastonholdtime": "Last On Hold Time",
+      "masterid": "Master Case",
+      "merged": "Internal Use Only",
+      "messagetypecode": "Received As",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msdyn_incident_feedback_context": "Feedback",
+      "msdyn_incident_msdyn_aicontactsuggestion_sourcerecord": "Teams Contact Suggestion by AI",
+      "msdyn_incident_msdyn_caseenrichment_caseid": "Case Enrichments",
+      "msdyn_incident_msdyn_casesuggestion_suggestedentity": "Case Suggestions",
+      "msdyn_incident_msdyn_casesuggestionrequestpayload_caseid": "Case Suggestion Request Payloads",
+      "msdyn_incident_msdyn_casetopic_incident_incidentid": "Case topic incidents",
+      "msdyn_incident_msdyn_customerasset": "Customer Assets",
+      "msdyn_incident_msdyn_federatedarticleincident_IncidentId": "Knowledge Federated Article Incidents",
+      "msdyn_incident_msdyn_iotalert_Case": "IoT Alerts",
+      "msdyn_incident_msdyn_suggestioninteraction_msdyn_suggestedentity": "Suggestion Interactions (msdyn_incident_msdyn_suggestioninteraction_msdyn_suggestedentity)",
+      "msdyn_incident_msdyn_suggestioninteraction_msdyn_suggestionfor": "Suggestion Interactions (msdyn_incident_msdyn_suggestioninteraction_msdyn_suggestionfor)",
+      "msdyn_incident_msdyn_suggestionrequestpayload": "Suggestion request payloads",
+      "msdyn_IoTAlert": "IoT Alert",
+      "msdyn_swarm_incident": "Swarms",
+      "nextsla": "Next Sla",
+      "onholdtime": "On Hold Time (Minutes)",
+      "OriginatingCase_Lead": "Leads",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "parentcaseid": "Parent Case",
+      "primarycontactid": "Contact",
+      "prioritycode": "Priority",
+      "processid": "Process Id",
+      "productid": "Product",
+      "productserialnumber": "Serial Number",
+      "resolveby": "Resolve By",
+      "resolvebykpiid": "Resolve By KPI",
+      "resolvebyslastatus": "Resolve By SLA Status",
+      "responseby": "First Response By",
+      "responsiblecontactid": "Responsible Contact",
+      "routecase": "Route Case",
+      "sentimentvalue": "Sentiment Value",
+      "servicestage": "Service Stage",
+      "severitycode": "Severity",
+      "slaid_sla": "SLA",
+      "slainvokedid_sla": "Last SLA applied",
+      "slakpiinstance_incident": "SLA KPI Instances",
+      "socialprofileid": "Social Profile",
+      "stageid": "(Deprecated) Stage Id",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "subjectid": "Subject",
+      "ticketnumber": "Case Number",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "title": "Case Title",
+      "transactioncurrencyid": "Currency",
+      "traversedpath": "(Deprecated) Traversed Path",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Requests",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Requests (Views)",
+    "Name": "_incident_views",
+    "RelatedEntityName": "Requests",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "00000000-0000-0000-00aa-000000666200": "Case Advanced Find View",
+      "00000000-0000-0000-00aa-000010001028": "My Active Cases",
+      "00000000-0000-0000-00aa-000010001029": "My Resolved Cases",
+      "00000000-0000-0000-00aa-000010001030": "All Cases",
+      "00000000-0000-0000-00aa-000010001032": "Active Cases",
+      "00000000-0000-0000-00aa-000010001034": "Resolved Cases",
+      "00000000-0000-0000-00aa-000010003501": "Case Associated View",
+      "1853caa4-255f-df11-ae90-00155d2e3002": "Cases Resolved in the last 7 days",
+      "2d5e1400-f86d-df11-986c-00155d2e3002": "My Team Members' Resolved Cases",
+      "413fd748-45a7-e911-8199-000d3af92e18": "Active Cases from IoT Alert",
+      "429bd987-ac6f-df11-986c-00155d2e3002": "Active Cases Opened in the Last 7 days",
+      "460f1fad-2673-df11-986c-00155d2e3002": "My Active Cases Opened in the Last 7 days",
+      "4d3297df-c7f0-45f9-9e09-b5b9df223645": "My Active Cases with Parent Child Status",
+      "54949c89-5d90-e011-95ae-00155d9cfa02": "Cases I Follow",
+      "54949c89-5d90-e011-95ae-00155d9cfa03": "Cases Being Followed",
+      "5cb909c6-20f0-eb11-bad5-00224876a6de": "Case introduction message view",
+      "5dbd358d-6670-4138-92b3-b5810fa2a0e8": "Associate Child Cases View",
+      "65ab1a2c-1cd9-4fbe-8fd3-d52142d6b3fd": "Associated Cases For Interaction Centric Form",
+      "6dfba3a1-6df3-4140-831b-b385c7e92b64": "My Connections",
+      "72210bbb-d9d5-42df-8efd-39395a3cd7a7": "Associated Cases",
+      "8572d789-fca7-e911-8199-000d3af92e18": "My Active Cases from IoT Alert",
+      "8e6c9aa8-d371-ec11-8942-000d3a8e5539": "Enhanced Active Cases",
+      "95aa1763-3800-4d3e-906f-e81b4191ac8e": "Active Cases with Parent Child Status",
+      "9ac51863-58c7-49a0-adcc-afd9a4c3ee59": "Case Lookup View",
+      "bad2fbea-2673-df11-986c-00155d2e3002": "Cases Resolved By Me in the last 7 days",
+      "bd15c679-df0b-e611-80d2-00155db1076f": "Similar Resolved Cases for Interaction Centric",
+      "c111f612-1563-df11-ae90-00155d2e3002": "Cases Opened in the Last 7 days",
+      "c4c27fad-faa7-e911-8199-000d3af92e18": "All Cases from IoT Alerts",
+      "cfb670fe-d205-450f-8edb-8f247081adb5": "Child Cases Grid Lookup View",
+      "d3650786-67e3-eb11-bacc-000d3a9bc650": "My Cases",
+      "e1d7d576-da76-4f22-8a65-cc57e23c41bb": "Merge Incident View",
+      "ebd1d24a-eea7-e211-9fb6-00155dd0ea05": "Recent Cases",
+      "fb30f6af-cea8-4320-a060-151350f1f0e7": "Active Customer Cases"
+    }
+  },
+  {
+    "DisplayName": "Activities Complete (Requests)",
+    "Name": "incident_activities_complete",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "activitiescomplete",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "activitiescomplete",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Case Origin",
+    "Name": "incident_caseorigincode",
+    "OptionSetInfoNameMapping": {
+      "1": "Phone",
+      "2": "Email",
+      "2483": "Facebook",
+      "3": "Web",
+      "3986": "Twitter",
+      "700610000": "IoT"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "caseorigincode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "caseorigincode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Case Type (Requests)",
+    "Name": "incident_casetypecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Question",
+      "2": "Problem",
+      "3": "Request"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "casetypecode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "casetypecode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Check Email (Requests)",
+    "Name": "incident_check_email",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "checkemail",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "checkemail",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Service Level (Requests)",
+    "Name": "incident_contractservicelevelcode",
+    "OptionSetInfoNameMapping": {
+      "1": "Gold",
+      "2": "Silver",
+      "3": "Bronze"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "contractservicelevelcode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "contractservicelevelcode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Customer Contacted (Requests)",
+    "Name": "incident_customercontacted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "customercontacted",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "customercontacted",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Satisfaction (Requests)",
+    "Name": "incident_customersatisfactioncode",
+    "OptionSetInfoNameMapping": {
+      "1": "Very Dissatisfied",
+      "2": "Dissatisfied",
+      "3": "Neutral",
+      "4": "Satisfied",
+      "5": "Very Satisfied"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "customersatisfactioncode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "customersatisfactioncode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Decrement Entitlement Terms (Requests)",
+    "Name": "incident_decremententitlementterm",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "decremententitlementterm",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "decremententitlementterm",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "First Response Sent (Requests)",
+    "Name": "incident_firstresponsesent",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "firstresponsesent",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "firstresponsesent",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "First Response SLA Status (Requests)",
+    "Name": "incident_firstresponseslastatus",
+    "OptionSetInfoNameMapping": {
+      "1": "In Progress",
+      "2": "Nearing Noncompliance",
+      "3": "Succeeded",
+      "4": "Noncompliant"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "firstresponseslastatus",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "firstresponseslastatus",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Follow up Task Created (Requests)",
+    "Name": "incident_followup_task_created",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "followuptaskcreated",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "followuptaskcreated",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Case Stage (Requests)",
+    "Name": "incident_incidentstagecode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "incidentstagecode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "incidentstagecode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Decrementing (Requests)",
+    "Name": "incident_isdecrementing",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isdecrementing",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isdecrementing",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Escalated (Requests)",
+    "Name": "incident_isescalated",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "isescalated",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "isescalated",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Internal Use Only (Requests)",
+    "Name": "incident_merged",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "merged",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "merged",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Priority (Requests)",
+    "Name": "incident_prioritycode",
+    "OptionSetInfoNameMapping": {
+      "1": "High",
+      "2": "Normal",
+      "3": "Low"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "prioritycode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "prioritycode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Resolve By SLA Status (Requests)",
+    "Name": "incident_resolvebyslastatus",
+    "OptionSetInfoNameMapping": {
+      "1": "In Progress",
+      "2": "Nearing Noncompliance",
+      "3": "Succeeded",
+      "4": "Noncompliant"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "resolvebyslastatus",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "resolvebyslastatus",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Route Case (Requests)",
+    "Name": "incident_routecase",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "routecase",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "routecase",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Severity (Requests)",
+    "Name": "incident_severitycode",
+    "OptionSetInfoNameMapping": {
+      "1": "Default Value"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "severitycode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "severitycode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Requests)",
+    "Name": "incident_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Resolved",
+      "2": "Cancelled"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Requests)",
+    "Name": "incident_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "In Progress",
+      "1000": "Information Provided",
+      "2": "On Hold",
+      "2000": "Merged",
+      "3": "Waiting for Details",
+      "4": "Researching",
+      "5": "Problem Solved",
+      "6": "Cancelled"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Service Stage",
+    "Name": "servicestage",
+    "OptionSetInfoNameMapping": {
+      "0": "Identify",
+      "1": "Research",
+      "2": "Resolve"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "servicestage",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "servicestage",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Post Message type",
+    "Name": "socialactivity_postmessagetype",
+    "OptionSetInfoNameMapping": {
+      "0": "Public Message",
+      "1": "Private Message"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "messagetypecode",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "messagetypecode",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Blocked Profile",
+    "Name": "socialprofile_isblocked",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "blockedprofile",
+        "OptionSetReferenceEntityName": "Requests"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "blockedprofile",
+    "RelatedEntityName": "Requests",
+    "Type": "OptionSetInfo"
+  }
+]

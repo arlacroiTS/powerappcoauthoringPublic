@@ -1,0 +1,102 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "demo_n_recommendations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "demo_n_recommendation",
+    "MaxGetRowsCount": 500,
+    "Name": "N_RECOMMENDATIONS",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "demo_Contact": "ContactRecommendation",
+      "demo_description": "Description",
+      "demo_n_recommendation_AsyncOperations": "System Jobs",
+      "demo_n_recommendation_BulkDeleteFailures": "Bulk Delete Failures",
+      "demo_n_recommendation_DuplicateBaseRecord": "Duplicate Records (demo_n_recommendation_DuplicateBaseRecord)",
+      "demo_n_recommendation_DuplicateMatchingRecord": "Duplicate Records (demo_n_recommendation_DuplicateMatchingRecord)",
+      "demo_n_recommendation_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "demo_n_recommendation_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "demo_n_recommendation_ProcessSession": "Process Sessions",
+      "demo_n_recommendation_SyncErrors": "Sync Errors",
+      "demo_n_recommendationid": "N_RECOMMENDATION",
+      "demo_name": "Name",
+      "demo_productimage": "ProductImage",
+      "demo_productimageid": "demo_ProductImageId",
+      "demo_salespitch": "Sales Pitch",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "N_RECOMMENDATIONS",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "N_RECOMMENDATIONS (Views)",
+    "Name": "_demo_n_recommendation_views",
+    "RelatedEntityName": "N_RECOMMENDATIONS",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "00d3f7db-7936-47d6-b844-d34cb21e489c": "N_RECOMMENDATION Lookup View",
+      "2beb4b81-4f15-4205-b95f-5a49bcc2450f": "Active N_RECOMMENDATIONS",
+      "a3a291f2-1ed6-4f9c-8c94-8b80a20b18cc": "N_RECOMMENDATION Associated View",
+      "b0652319-8d29-4dc5-85ae-72a08b921d3a": "Inactive N_RECOMMENDATIONS",
+      "d1c0e853-b27b-4174-b95d-b14fe1a58c53": "N_RECOMMENDATION Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (N_RECOMMENDATIONS)",
+    "Name": "demo_n_recommendation_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "N_RECOMMENDATIONS"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "N_RECOMMENDATIONS",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (N_RECOMMENDATIONS)",
+    "Name": "demo_n_recommendation_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "N_RECOMMENDATIONS"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "N_RECOMMENDATIONS",
+    "Type": "OptionSetInfo"
+  }
+]

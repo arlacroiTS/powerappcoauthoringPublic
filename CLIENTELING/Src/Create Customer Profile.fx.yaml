@@ -1,0 +1,264 @@
+"'Create Customer Profile' As screen":
+    BackgroundImage: ='R (1)_1'
+    ImagePosition: =ImagePosition.Fill
+
+    "BusinessCardReader1 As 'AI Builder Business Card control'":
+        BorderColor: =RGBA(210, 208, 206, 1)
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(0, 0, 0, 1)
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =29
+        Text: ="Scan business card"
+        Width: =277
+        X: =89
+        Y: =171
+        ZIndex: =1
+
+    FirstName As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Default: =If(BusinessCardReader1.FirstName="","",BusinessCardReader1.FirstName)
+        Height: =56
+        HintText: ="First Name"
+        Size: =15
+        Width: =487
+        X: =147
+        Y: =248
+        ZIndex: =9
+
+    LastName As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Default: =BusinessCardReader1.LastName
+        Height: =56
+        HintText: ="Last Name"
+        Size: =15
+        Width: =487
+        X: =147
+        Y: =323
+        ZIndex: =10
+
+    Street As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Default: =
+        Height: =56
+        HintText: ="Address"
+        Size: =15
+        Width: =487
+        X: =147
+        Y: =396
+        ZIndex: =11
+
+    Email As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Default: =BusinessCardReader1.Email
+        Height: =56
+        HintText: ="Email"
+        Size: =15
+        Width: =487
+        X: =719
+        Y: =248
+        ZIndex: =12
+
+    Label12 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =45
+        Size: =25
+        Text: ="Create a new contact "
+        Visible: =false
+        Width: =455
+        X: =484
+        Y: =156
+        ZIndex: =13
+
+    Button2 As button:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =49
+        OnSelect: =Addanewcontact.Run(FirstName.Text,LastName.Text,Street.Text,newcontactcity.Text,newcontactcountry.Text,Email.Text)
+        Size: =22
+        Text: ="Create contact"
+        Width: =438
+        X: =449
+        Y: =636
+        ZIndex: =14
+
+    Toggle1 As toggleSwitch:
+        Height: =39
+        ShowLabel: =false
+        Width: =103
+        X: =831
+        Y: =318
+        ZIndex: =15
+
+    Toggle1_1 As toggleSwitch:
+        Height: =39
+        ShowLabel: =false
+        Width: =103
+        X: =1061
+        Y: =318
+        ZIndex: =16
+
+    Label16 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="Email"
+        X: =749
+        Y: =318
+        ZIndex: =17
+
+    Label16_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =20
+        Text: ="Phone"
+        X: =967
+        Y: =313
+        ZIndex: =18
+
+    newcontactcity As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Default: =
+        Height: =59
+        HintText: ="City"
+        Size: =15
+        Width: =487
+        X: =147
+        Y: =475
+        ZIndex: =19
+
+    newcontactcountry As text:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Default: =""
+        Height: =56
+        HintText: ="Country"
+        Size: =15
+        Width: =487
+        X: =147
+        Y: =553
+        ZIndex: =20
+
+    Dropdown1 As dropdown:
+        ChevronBackground: =RGBA(0, 0, 0, 1)
+        Default: =""
+        Height: =56
+        Items: =N_MACHINES
+        SelectionFill: =RGBA(0, 0, 0, 1)
+        Width: =486
+        X: =720
+        Y: =436
+        ZIndex: =21
+
+    Label3 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        Size: =20
+        Text: ="Machine"
+        Width: =398
+        X: =719
+        Y: =396
+        ZIndex: =22
+
+    Dropdown1_1 As dropdown:
+        ChevronBackground: =RGBA(0, 0, 0, 1)
+        Height: =56
+        Items: ='N_FAVORITE COFFEES'
+        SelectionFill: =RGBA(0, 0, 0, 1)
+        Width: =486
+        X: =720
+        Y: =550
+        ZIndex: =23
+
+    Label3_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        Size: =20
+        Text: ="Preferred Caps"
+        Width: =398
+        X: =719
+        Y: =511
+        ZIndex: =24
+
+    Icon3 As icon.CheckBadge:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =40
+        Icon: =Icon.CheckBadge
+        Width: =45
+        X: =488
+        Y: =641
+        ZIndex: =35
+
+    Icon7_2 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =36
+        X: =2
+        Y: =730
+        ZIndex: =43
+
+    Header_3 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =43
+
+        Label1_5 As label:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =123
+            Text: =""
+            Width: =1366
+            ZIndex: =36
+
+        Image2_7 As image:
+            Image: ='R (1)'
+            OnSelect: =Navigate('Welcome Coffee Specialist Page')
+            X: =15
+            Y: =16
+            ZIndex: =39
+
+        Label6_4 As label:
+            Color: =RGBA(204, 204, 204, 1)
+            Height: =50
+            Size: =20
+            Text: ="Nespresso My boutique"
+            Width: =333
+            X: =449
+            Y: =36
+            ZIndex: =40
+
+        Label10_4 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =71
+            Size: =18
+            Text: ="> Create Customer Profile"
+            Width: =339
+            X: =757
+            Y: =27
+            ZIndex: =41
+
+        Image2_8 As image:
+            Height: =66
+            Image: =User().Image
+            Width: =72
+            X: =1285
+            Y: =28
+            ZIndex: =42
+
+    Label2_5 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =43
+        Size: =18
+        Text: =User().FullName
+        Width: =189
+        X: =1139
+        Y: =41
+        ZIndex: =44
+

@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "demo_n_favoritecoffees",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "demo_n_favoritecoffee",
+    "MaxGetRowsCount": 500,
+    "Name": "N_FAVORITE COFFEES",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "demo_coffeeimage": "CoffeeImage",
+      "demo_coffeeimageid": "demo_CoffeeImageId",
+      "demo_ContactFavoriteCoffee": "ContactFavoriteCoffee",
+      "demo_n_favoritecoffee_AsyncOperations": "System Jobs",
+      "demo_n_favoritecoffee_BulkDeleteFailures": "Bulk Delete Failures",
+      "demo_n_favoritecoffee_DuplicateBaseRecord": "Duplicate Records (demo_n_favoritecoffee_DuplicateBaseRecord)",
+      "demo_n_favoritecoffee_DuplicateMatchingRecord": "Duplicate Records (demo_n_favoritecoffee_DuplicateMatchingRecord)",
+      "demo_n_favoritecoffee_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "demo_n_favoritecoffee_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "demo_n_favoritecoffee_ProcessSession": "Process Sessions",
+      "demo_n_favoritecoffee_SyncErrors": "Sync Errors",
+      "demo_n_favoritecoffeeid": "N_FAVORITE COFFEE",
+      "demo_name": "Name",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "N_FAVORITE COFFEES",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "N_FAVORITE COFFEES (Views)",
+    "Name": "_demo_n_favoritecoffee_views",
+    "RelatedEntityName": "N_FAVORITE COFFEES",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "68d969b1-c5fd-4eb9-be73-b2829249d948": "N_FAVORITE COFFEE Associated View",
+      "8c0dce62-d749-4991-b253-961b3ab2d10d": "Active N_FAVORITE COFFEES",
+      "9b0612b9-f50f-46e9-b4e7-140cdda1e305": "Inactive N_FAVORITE COFFEES",
+      "a9358bc1-3c5d-44a5-8367-8d7cb75f2996": "N_FAVORITE COFFEE Advanced Find View",
+      "fb4f3e20-69b1-4b0b-bec5-53e9e16c0a57": "N_FAVORITE COFFEE Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (N_FAVORITE COFFEES)",
+    "Name": "demo_n_favoritecoffee_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "N_FAVORITE COFFEES"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "N_FAVORITE COFFEES",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (N_FAVORITE COFFEES)",
+    "Name": "demo_n_favoritecoffee_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "N_FAVORITE COFFEES"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "N_FAVORITE COFFEES",
+    "Type": "OptionSetInfo"
+  }
+]

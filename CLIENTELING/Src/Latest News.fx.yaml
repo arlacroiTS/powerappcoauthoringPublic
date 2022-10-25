@@ -1,0 +1,82 @@
+"'Latest News' As screen":
+    BackgroundImage: =
+
+    PowerBI1 As powerbi:
+        DashboardId: ="21b343b4-b3f7-4fbf-a733-29284a6ac78f"
+        Height: =645
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=21b343b4-b3f7-4fbf-a733-29284a6ac78f&tileId=01600636-f66a-4915-b0ce-d23fe3c71f06&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLVdFU1QtRVVST1BFLUUtUFJJTUFSWS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        Width: =1366
+        WorkspaceId: ="c6da2bbd-ce5a-4a00-ab18-846c1b3dad79"
+        Y: =123
+        ZIndex: =9
+
+    Icon7_3 As icon.BackArrow:
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =38
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =36
+        Y: =730
+        ZIndex: =17
+
+    Header_4 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =20
+        ZIndex: =17
+
+        Label1_6 As label:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =123
+            Text: =""
+            Width: =1366
+            ZIndex: =10
+
+        Image2_9 As image:
+            Image: ='R (1)'
+            OnSelect: =Navigate('Welcome Coffee Specialist Page')
+            X: =21
+            Y: =11
+            ZIndex: =13
+
+        Label6_5 As label:
+            Color: =RGBA(204, 204, 204, 1)
+            Height: =50
+            Size: =20
+            Text: ="Nespresso My boutique"
+            Width: =333
+            X: =449
+            Y: =29
+            ZIndex: =14
+
+        Label10_5 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =46
+            Size: =18
+            Text: ="> Consumption trends"
+            Width: =287
+            X: =757
+            Y: =33
+            ZIndex: =15
+
+        Image2_10 As image:
+            Height: =66
+            Image: =User().Image
+            Width: =72
+            X: =1285
+            Y: =21
+            ZIndex: =16
+
+    Label2_8 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =43
+        Size: =18
+        Text: =User().FullName
+        Width: =189
+        X: =1139
+        Y: =41
+        ZIndex: =18
+
