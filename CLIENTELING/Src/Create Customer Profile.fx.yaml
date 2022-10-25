@@ -1,5 +1,5 @@
 "'Create Customer Profile' As screen":
-    BackgroundImage: ='R (1)_1'
+    BackgroundImage: ='microsoft_windows_10x_logo_blue_spotlight_background_by_atakan_gettyimages-872430032_2400x1600-100882264-large'
     ImagePosition: =ImagePosition.Fill
 
     "BusinessCardReader1 As 'AI Builder Business Card control'":
