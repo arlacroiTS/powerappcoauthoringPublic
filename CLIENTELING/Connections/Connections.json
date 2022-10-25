@@ -100,8 +100,7 @@
   },
   "699d0646-6738-45c3-b64c-6f4b7779c7d8": {
     "connectionParameters": {
-      "sku": "Enterprise",
-      "token:grantType": "code"
+      "sku": "Enterprise"
     },
     "connectionRef": {
       "apiTier": "Premium",

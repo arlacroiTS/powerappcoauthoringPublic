@@ -433,20 +433,13 @@ Details As screen:
             Width: =1366
             ZIndex: =15
 
-        Image2_4 As image:
-            Image: ='R (1)'
-            OnSelect: =Navigate('Welcome Coffee Specialist Page')
-            X: =26
-            Y: =14
-            ZIndex: =18
-
         Label6_3 As label:
             Color: =RGBA(204, 204, 204, 1)
-            Height: =50
+            Height: =47
             Size: =20
-            Text: ="Nespresso My boutique"
-            Width: =333
-            X: =449
+            Text: ="My boutique"
+            Width: =196
+            X: =585
             Y: =36
             ZIndex: =19
 
